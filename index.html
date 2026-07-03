@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sphoṭa Completed: From Varṇa to Vākya · Series A Extended · Part Two · Cultural Musings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-void:#0d0605;
+    --bg-deep:#170a08;
+    --bg-panel:#1f0e0b;
+    --bg-card:#241109;
+    --crimson-dark:#3a0d0d;
+    --crimson:#6e1414;
+    --crimson-bright:#9a1f1f;
+    --crimson-glow:#c22e2e;
+    --gold-dim:#7a5a1e;
+    --gold:#c9a227;
+    --gold-bright:#e6c65c;
+    --gold-pale:#f0dfa6;
+    --cream:#e9dcc3;
+    --cream-dim:#c8b899;
+    --ink:#0a0503;
+    --rule:#4a2418;
+    --shadow:rgba(0,0,0,0.55);
+    --font-serif:'Cormorant Garamond','EB Garamond',Georgia,serif;
+    --font-body:'EB Garamond',Georgia,serif;
+    --font-deva:'Noto Sans Devanagari',serif;
+    --maxw:920px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(ellipse at top, #2a1108 0%, var(--bg-void) 55%),
+      linear-gradient(180deg, var(--bg-void), #0a0402 100%);
+    color:var(--cream);
+    font-family:var(--font-body);
+    font-size:18px;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--gold-bright);text-decoration:none;border-bottom:1px solid rgba(201,162,39,0.35);}
+  a:hover{color:var(--gold-pale);border-bottom-color:var(--gold-pale);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  header.site{
+    background:linear-gradient(180deg, #1a0906, #0d0503 90%);
+    border-bottom:1px solid var(--rule);
+    padding:14px 0;
+    text-align:center;
+  }
+  header.site .brand{font-family:var(--font-serif);letter-spacing:0.18em;text-transform:uppercase;font-size:13px;color:var(--gold-dim);}
+  header.site .brand strong{color:var(--gold);}
+  header.site .sub{font-size:12px;color:var(--cream-dim);letter-spacing:0.08em;margin-top:2px;}
+
+  .hero{
+    padding:56px 0 34px;
+    text-align:center;
+    background:
+      radial-gradient(ellipse at 50% -10%, rgba(201,162,39,0.10), transparent 60%);
+    border-bottom:1px solid var(--rule);
+  }
+  .hero .eyebrow{
+    font-size:13px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-dim);
+    margin-bottom:14px;
+  }
+  .hero .deva{
+    font-family:var(--font-deva);
+    font-size:22px;
+    color:var(--gold-pale);
+    line-height:2.1;
+    max-width:640px;margin:0 auto 22px;
+    opacity:0.92;
+  }
+  nav.toc{
+    max-width:var(--maxw);margin:0 auto;padding:18px 28px 26px;
+    font-size:14.5px;line-height:2.05;color:var(--cream-dim);
+    text-align:center;
+  }
+  nav.toc a{border-bottom:none;color:var(--cream-dim);}
+  nav.toc a:hover{color:var(--gold-bright);}
+  nav.toc .sep{color:var(--rule);margin:0 6px;}
+
+  .series-nav{
+    background:var(--bg-panel);
+    border-top:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+    padding:16px 0;
+    font-size:14px;
+    text-align:center;
+    color:var(--cream-dim);
+    line-height:2.0;
+  }
+  .series-nav a{color:var(--cream-dim);border-bottom:none;}
+  .series-nav a.current{color:var(--gold-bright);font-weight:600;}
+  .series-nav a:hover{color:var(--gold-bright);}
+
+  main{padding:44px 0 10px;}
+
+  .kicker{
+    font-family:var(--font-serif);
+    font-size:15px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-dim);
+    text-align:center;margin-bottom:6px;
+  }
+  h1.title{
+    font-family:var(--font-serif);
+    font-weight:600;
+    font-size:44px;
+    line-height:1.18;
+    text-align:center;
+    color:var(--gold-pale);
+    margin:6px 0 18px;
+  }
+  .subtitle{
+    font-family:var(--font-serif);
+    font-style:italic;
+    font-size:19px;
+    text-align:center;
+    color:var(--cream-dim);
+    max-width:760px;margin:0 auto 34px;
+    line-height:1.55;
+  }
+
+  .infobox{
+    background:var(--bg-card);
+    border:1px solid var(--rule);
+    border-left:3px solid var(--crimson-bright);
+    border-radius:4px;
+    padding:22px 26px;
+    margin:0 0 34px;
+    font-size:15.5px;
+    color:var(--cream-dim);
+  }
+  .infobox .row{display:flex;flex-wrap:wrap;gap:6px 10px;margin-bottom:6px;}
+  .infobox .row:last-child{margin-bottom:0;}
+  .infobox strong{color:var(--gold);font-weight:600;}
+
+  table.series-table{
+    width:100%;border-collapse:collapse;margin:26px 0 38px;
+    font-size:15px;
+  }
+  table.series-table caption{
+    caption-side:top;font-family:var(--font-serif);font-style:italic;color:var(--gold-dim);
+    text-align:left;margin-bottom:8px;font-size:14px;
+  }
+  table.series-table th, table.series-table td{
+    border:1px solid var(--rule);padding:9px 12px;text-align:left;vertical-align:top;
+  }
+  table.series-table th{background:var(--crimson-dark);color:var(--gold-pale);font-weight:600;}
+  table.series-table tr:nth-child(even) td{background:rgba(255,255,255,0.02);}
+  table.series-table tr.current td{background:rgba(201,162,39,0.10);color:var(--gold-pale);}
+
+  h2.blocktitle{
+    font-family:var(--font-serif);
+    font-size:15px;letter-spacing:0.14em;text-transform:uppercase;
+    color:var(--gold-dim);
+    text-align:center;
+    margin:64px 0 2px;
+  }
+  h2.roman{
+    font-family:var(--font-serif);
+    font-size:64px;
+    text-align:center;
+    color:var(--crimson-glow);
+    margin:2px 0 6px;
+    line-height:1;
+    text-shadow:0 0 24px rgba(154,31,31,0.35);
+  }
+  h2.section-name{
+    font-family:var(--font-serif);
+    font-weight:600;
+    font-size:29px;
+    text-align:center;
+    color:var(--gold-pale);
+    margin:0 0 30px;
+    line-height:1.3;
+  }
+  h3{
+    font-family:var(--font-serif);
+    font-weight:600;
+    font-size:21px;
+    color:var(--gold-bright);
+    margin:34px 0 12px;
+    border-bottom:1px solid var(--rule);
+    padding-bottom:6px;
+  }
+  p{margin:0 0 16px;color:var(--cream);}
+  .lede{font-size:19px;color:var(--cream-dim);}
+
+  .divider{
+    text-align:center;color:var(--gold-dim);letter-spacing:0.5em;
+    margin:46px 0;font-size:14px;
+  }
+
+  .shloka{
+    background:linear-gradient(180deg, var(--bg-card), var(--bg-panel));
+    border:1px solid var(--rule);
+    border-left:3px solid var(--gold-dim);
+    border-radius:4px;
+    padding:20px 26px;
+    margin:22px 0;
+  }
+  .shloka .dev{
+    font-family:var(--font-deva);
+    font-size:19px;
+    color:var(--gold-pale);
+    line-height:2.0;
+    margin-bottom:10px;
+  }
+  .shloka .translit{
+    font-style:italic;
+    color:var(--cream-dim);
+    font-size:16px;
+    line-height:1.9;
+    margin-bottom:10px;
+  }
+  .shloka .gloss{
+    font-size:16px;
+    color:var(--cream);
+  }
+  .shloka .cite{
+    display:block;margin-top:10px;font-size:13px;letter-spacing:0.05em;
+    color:var(--gold-dim);text-transform:uppercase;
+  }
+
+  .lpuf{
+    margin:26px 0;border:1px solid var(--rule);border-radius:6px;overflow:hidden;
+  }
+  .lpuf .lpuf-row{
+    display:grid;grid-template-columns:150px 1fr;border-top:1px solid var(--rule);
+  }
+  .lpuf .lpuf-row:first-child{border-top:none;}
+  .lpuf .lpuf-label{
+    background:var(--crimson-dark);color:var(--gold-pale);
+    font-family:var(--font-serif);font-weight:600;font-size:14.5px;
+    letter-spacing:0.06em;text-transform:uppercase;
+    padding:14px 16px;display:flex;align-items:center;
+  }
+  .lpuf .lpuf-content{padding:14px 18px;background:var(--bg-card);font-size:16px;}
+
+  blockquote.gloss-quote{
+    margin:22px 0;padding:16px 22px;border-left:3px solid var(--crimson-bright);
+    background:rgba(154,31,31,0.06);font-style:italic;color:var(--cream-dim);
+  }
+
+  ul, ol{padding-left:26px;margin:0 0 16px;}
+  li{margin-bottom:8px;}
+
+  .callout{
+    background:rgba(201,162,39,0.06);
+    border:1px solid var(--gold-dim);
+    border-radius:4px;
+    padding:16px 20px;
+    margin:20px 0;
+    font-size:15.5px;
+    color:var(--cream-dim);
+  }
+  .callout strong{color:var(--gold-bright);}
+
+  /* Tab Widget */
+  .tabwidget{
+    margin:40px 0;border:1px solid var(--rule);border-radius:8px;overflow:hidden;
+    background:var(--bg-panel);
+  }
+  .tabwidget-head{
+    padding:22px 26px 8px;text-align:center;
+  }
+  .tabwidget-head .eyebrow{font-size:12.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-dim);}
+  .tabwidget-head h3{border:none;margin:6px 0 4px;font-size:24px;}
+  .tabwidget-head p{font-size:15px;color:var(--cream-dim);max-width:600px;margin:0 auto 10px;}
+  .tabs-nav{
+    display:flex;flex-wrap:wrap;gap:2px;
+    background:var(--bg-deep);
+    padding:6px;
+  }
+  .tab-btn{
+    flex:1 1 150px;
+    background:var(--bg-card);
+    border:1px solid var(--rule);
+    color:var(--cream-dim);
+    font-family:var(--font-serif);
+    font-size:14px;
+    padding:12px 10px;
+    cursor:pointer;
+    border-radius:4px;
+    transition:all 0.2s ease;
+  }
+  .tab-btn:hover{color:var(--gold-bright);border-color:var(--gold-dim);}
+  .tab-btn.active{
+    background:var(--crimson-dark);
+    color:var(--gold-pale);
+    border-color:var(--crimson-bright);
+    font-weight:600;
+  }
+  .tab-panel{display:none;padding:26px 30px 32px;}
+  .tab-panel.active{display:block;}
+  .tab-panel h4{
+    font-family:var(--font-serif);color:var(--gold-bright);font-size:19px;margin:22px 0 10px;
+  }
+  .tab-panel h4:first-child{margin-top:0;}
+
+  .glossary-term{
+    padding:14px 0;border-bottom:1px solid var(--rule);
+  }
+  .glossary-term:last-child{border-bottom:none;}
+  .glossary-term .term{
+    font-family:var(--font-deva);color:var(--gold-pale);font-size:18px;margin-right:8px;
+  }
+  .glossary-term .roman{font-style:italic;color:var(--gold-dim);}
+  .glossary-term .def{color:var(--cream-dim);font-size:15.5px;display:block;margin-top:4px;}
+
+  footer.paper-footer{
+    border-top:1px solid var(--rule);
+    margin-top:60px;padding:34px 0 50px;
+    text-align:center;color:var(--cream-dim);font-size:14.5px;line-height:2.0;
+  }
+  footer.paper-footer .om{
+    font-family:var(--font-deva);font-size:22px;color:var(--gold);margin-bottom:6px;
+  }
+  footer.paper-footer .translit-om{font-style:italic;color:var(--gold-dim);margin-bottom:20px;display:block;}
+
+  #footnotes ol, #bibliography p, #glossary .glossary-term{font-size:15.5px;}
+  #footnotes ol{padding-left:22px;}
+  #footnotes li{margin-bottom:12px;color:var(--cream-dim);}
+  #footnotes li em{color:var(--gold-dim);font-style:italic;}
+
+  .appendix-table td, .appendix-table th{font-size:14.5px;}
+
+  .recap-box{
+    background:var(--bg-card);border:1px solid var(--rule);border-radius:6px;
+    padding:26px 28px;margin:30px 0;
+  }
+  .recap-box blockquote{
+    margin:18px 0 0;padding:14px 18px;border-left:3px solid var(--gold-dim);
+    font-style:italic;color:var(--cream-dim);background:rgba(201,162,39,0.05);
+  }
+
+  .nav-arrows{
+    display:flex;justify-content:space-between;margin:40px 0 20px;font-size:14px;
+  }
+
+  @media (max-width:640px){
+    h1.title{font-size:32px;}
+    h2.roman{font-size:48px;}
+    h2.section-name{font-size:23px;}
+    .lpuf .lpuf-row{grid-template-columns:1fr;}
+    .lpuf .lpuf-label{padding:10px 16px;}
+    body{font-size:16.5px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="brand">Cultural Musings <strong>·</strong> Vedic &amp; Śāstric Research Platform</div>
+  <div class="sub">culturalmusings.com · 26 Research Subdomains</div>
+</header>
+
+<div class="hero">
+  <div class="eyebrow">Series A · Extended Sequence · Part Two of Twelve</div>
+  <div class="deva">
+    स्फोटः · वर्णः · पदम् · वाक्यम् · प्रतिभा ·
+    ध्वनिः · नादः · अपोद्धारः · वाक्यस्फोटः ·
+    अखण्डवाक्यस्फोटः
+  </div>
+</div>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="#series-context">Series Context</a><span class="sep">·</span>
+    <a href="#abstract">Abstract</a><span class="sep">·</span>
+    <a href="#sec-1">I. From Part One</a><span class="sep">·</span>
+    <a href="#sec-2">II. Varṇa-Sphoṭa</a><span class="sep">·</span>
+    <a href="#sec-3">III. Varṇa to Pada</a><span class="sep">·</span>
+    <a href="#sec-4">IV. Pada-Sphoṭa</a><span class="sep">·</span>
+    <a href="#sec-5">V. Pada to Vākya</a><span class="sep">·</span>
+    <a href="#sec-6">VI. Vākya-Sphoṭa</a><span class="sep">·</span>
+    <a href="#sec-7">VII. Dhvani and Sphoṭa</a><span class="sep">·</span>
+    <a href="#sec-8">VIII. The Fire Analogy</a><span class="sep">·</span>
+    <a href="#sec-9">IX. The Reflection Analogy</a><span class="sep">·</span>
+    <a href="#sec-10">X. Two Aspects of Śabda</a><span class="sep">·</span>
+    <a href="#sec-11">XI. Intrinsic Difference?</a><span class="sep">·</span>
+    <a href="#sec-12">XII. Ātmarūpa, Artharūpa</a><span class="sep">·</span>
+    <a href="#sec-13">XIII. Vṛtti: Mode of Utterance</a><span class="sep">·</span>
+    <a href="#sec-14">XIV. Closing I</a><span class="sep">·</span>
+    <a href="#sec-15">XV. The Painter's Analogy</a><span class="sep">·</span>
+    <a href="#sec-16">XVI. Mandana's Cloth</a><span class="sep">·</span>
+    <a href="#sec-17">XVII. Auditory Image</a><span class="sep">·</span>
+    <a href="#sec-18">XVIII. Sequence-less Unity</a><span class="sep">·</span>
+    <a href="#sec-19">XIX. Words as Stepping Stones</a><span class="sep">·</span>
+    <a href="#sec-20">XX. Apoddhāra</a><span class="sep">·</span>
+    <a href="#sec-21">XXI. Abheda-Pūrvakā Bhedāḥ</a><span class="sep">·</span>
+    <a href="#sec-22">XXII. Vākyārtha-Nibandhanam</a><span class="sep">·</span>
+    <a href="#sec-23">XXIII. Nāgeśa's Eightfold Sphoṭa</a><span class="sep">·</span>
+    <a href="#sec-24">XXIV. Akhaṇḍa-Vākya-Sphoṭa</a><span class="sep">·</span>
+    <a href="#sec-25">XXV. Etymology of Sphoṭa</a><span class="sep">·</span>
+    <a href="#sec-26">XXVI. Two Planes of Sphoṭa</a><span class="sep">·</span>
+    <a href="#sec-27">XXVII. Bāhya and Ābhyantara</a><span class="sep">·</span>
+    <a href="#sec-28">XXVIII. Closing II</a><span class="sep">·</span>
+    <a href="#sec-29">XXIX. Pratibhā</a><span class="sep">·</span>
+    <a href="#sec-30">XXX. Six Sources of Pratibhā</a><span class="sep">·</span>
+    <a href="#sec-31">XXXI. The Kamalam Illustration</a><span class="sep">·</span>
+    <a href="#sec-32">XXXII. The Rope-Snake Analogy</a><span class="sep">·</span>
+    <a href="#sec-33">XXXIII. Pratibhā in Poetics</a><span class="sep">·</span>
+    <a href="#sec-34">XXXIV. Sphoṭavādins and Opponents</a><span class="sep">·</span>
+    <a href="#sec-35">XXXV. Śabara's Rejection</a><span class="sep">·</span>
+    <a href="#sec-36">XXXVI. Kumārila's Objection</a><span class="sep">·</span>
+    <a href="#sec-37">XXXVII. Maṇḍana's Defense</a><span class="sep">·</span>
+    <a href="#sec-38">XXXVIII. Śaṅkara and Varṇa-vāda</a><span class="sep">·</span>
+    <a href="#sec-39">XXXIX. Vācaspati's Abhihitānvaya-vāda</a><span class="sep">·</span>
+    <a href="#sec-40">XL. Matilal's Assessment</a><span class="sep">·</span>
+    <a href="#sec-41">XLI. Closing III</a><span class="sep">·</span>
+    <a href="#tabwidget-anchor">Six-Panel Deep-Dive</a><span class="sep">·</span>
+    <a href="#sec-appendix">Appendix</a><span class="sep">·</span>
+    <a href="#footnotes">Footnotes</a><span class="sep">·</span>
+    <a href="#bibliography">Bibliography</a><span class="sep">·</span>
+    <a href="#glossary">Glossary</a><span class="sep">·</span>
+    <a href="#sec-recap">Recap &amp; Handoff</a>
+  </div>
+</nav>
+
+<div class="series-nav">
+  <div class="wrap">
+    <a href="https://shastrasextvak.culturalmusings.com/">Part I · Śabdabrahman: Vāk as the Ground of Being</a> ·
+    <a href="#" class="current">Part II · Sphoṭa Completed: From Varṇa to Vākya</a> ·
+    <a href="#">Part III · Mātṛkā: The Phoneme as Power</a> ·
+    <a href="#">Part IV · Mātṛkā-Nyāsa: Encoding Vāk Into the Body</a> ·
+    <a href="#">Part V · Prāṇa, Citta, and the Yogic Technology of Speech</a> ·
+    <a href="#">Part VI · Kuṇḍalinī: Vāk as Ascent</a> ·
+    <a href="#">Part VII · Vaikharī Becomes Gesture</a> ·
+    <a href="#">Part VIII · Nāṭyaśāstra I: Rasa as Embodied Śabda</a> ·
+    <a href="#">Part IX · Nāṭyaśāstra II: Abhinaya's Fourfold Method</a> ·
+    <a href="#">Part X · Toward the Karaṇas</a> ·
+    <a href="#">Part XI · The 108 Karaṇas: Structure and Source</a> ·
+    <a href="#">Part XII · Closing Synthesis: Śabdabrahman to Śarīra</a>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <div class="kicker">Series A · Extended Sequence · Part II of XII · White Paper</div>
+  <h1 class="title">Sphoṭa Completed: From Varṇa to Vākya</h1>
+  <p class="subtitle">The Grammatical Machinery by Which Individual Phonemes Are Held to Compose Into Words and Sentences — Completing Part One's Introductory Statement of Sphoṭa Theory With the Full Lakṣaṇa–Prakriyā–Udāharaṇa–Phala Treatment of Varṇa-Sphoṭa, Pada-Sphoṭa, and Vākya-Sphoṭa, and the Documented Historical Debate Between the Grammarians and the Mīmāṃsakas</p>
+
+  <div id="series-context" class="infobox">
+    <div class="row"><strong>Series</strong> A Extended · Part II of XII</div>
+    <div class="row"><strong>Vāk Level</strong> Grammatical Differentiation — Varṇa, Pada, and Vākya Distinguished From an Undifferentiated Ground</div>
+    <div class="row"><strong>Format</strong> White Paper · Forty-One Core Sections + Six-Panel Deep-Dive Tab Widget</div>
+    <div class="row"><strong>Predecessor</strong> Series A Extended, Part One — Śabdabrahman: Vāk as the Ground of Being</div>
+    <div class="row"><strong>Method</strong> Lakṣaṇa (Definition) · Prakriyā (Process) · Udāharaṇa (Example) · Phala (Result), applied section by section</div>
+  </div>
+
+  <table class="series-table">
+    <caption>Series A Extended · The Twelve-Part Descent</caption>
+    <thead><tr><th>Part</th><th>Stage of Descent</th><th>Focus</th></tr></thead>
+    <tbody>
+      <tr><td>I</td><td>Undifferentiated ground</td><td>Śabdabrahman: Vāk as the Ground of Being</td></tr>
+      <tr class="current"><td>II</td><td>Grammatical differentiation</td><td>Sphoṭa Completed: From Varṇa to Vākya</td></tr>
+      <tr><td>III</td><td>Ritual-phonemic power</td><td>Mātṛkā: The Phoneme as Power</td></tr>
+      <tr><td>IV</td><td>Somatic encoding</td><td>Mātṛkā-Nyāsa: Encoding Vāk Into the Body</td></tr>
+      <tr><td>V</td><td>Yogic discipline</td><td>Prāṇa, Citta, and the Yogic Technology of Speech</td></tr>
+      <tr><td>VI</td><td>Yogic ascent</td><td>Kuṇḍalinī: Vāk as Ascent</td></tr>
+      <tr><td>VII</td><td>Threshold to gesture</td><td>Vaikharī Becomes Gesture: The Threshold to Abhinaya</td></tr>
+      <tr><td>VIII</td><td>Aesthetic embodiment</td><td>Nāṭyaśāstra I: Rasa as Embodied Śabda</td></tr>
+      <tr><td>IX</td><td>Somatic method</td><td>Nāṭyaśāstra II: Abhinaya's Fourfold Method</td></tr>
+      <tr><td>X</td><td>Codification begins</td><td>Toward the Karaṇas: Movement as Codified Vāk</td></tr>
+      <tr><td>XI</td><td>Full codification</td><td>The 108 Karaṇas: Structure and Source</td></tr>
+      <tr><td>XII</td><td>Closing return</td><td>Closing Synthesis: Śabdabrahman to Śarīra</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <strong>Reading Note</strong> — This paper presupposes Part One's establishment of Śabdabrahman and its introductory statement of sphoṭa theory (Part One, Section IV), and undertakes the completion promised in Part One's own closing handoff: the full grammatical mechanism by which varṇa-sphoṭa is held to compose into pada-sphoṭa and, finally, into vākya-sphoṭa, together with the documented historical debate between the Grammarians (Vaiyākaraṇas) and the Mīmāṃsakas that Part One's Section V only introduced. Readers who have not yet read Part One may still follow this paper's own argument, since each section restates the minimum prior claim it depends upon before extending it.
+  </div>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <h2 id="abstract" class="section-name" style="margin-top:0;">Abstract</h2>
+  <p class="lede">This paper completes the sphoṭa theory Part One introduced, tracing in full technical detail the documented process by which Bhartṛhari's grammatical philosophy holds an indivisible linguistic reality to become audible as a temporal sequence of phonemes (varṇa), to organise provisionally into words (pada), and finally to be grasped, whole and without inner sequence, as the meaning of a complete sentence (vākya). Forty-one sections trace this process through Bhartṛhari's own kārikās from the first book of the Vākyapadīya — the opening verse on Śabda-tattva, the twin aspects of upādāna-śabda, the fire-in-kindling-wood analogy, the water-reflection analogy, and the documented account of how a sequence-less sphoṭa acquires the appearance of sequence — together with the second book's treatment of apoddhāra, the priority of sentence-meaning over word-meaning, and Bhartṛhari's doctrine of pratibhā, the flash of intuitive insight through which a sentence's meaning is finally grasped. This paper documents Mandana Miśra's defense of the doctrine in the Sphoṭa-siddhi, the historical roll of Sphoṭavādins and their opponents, and the specific documented objections raised by Śabaraswāmin, Kumārila Bhaṭṭa, Vācaspati Miśra, and Śaṅkara, who together with Upavarṣa built the rival Varṇa-vāda that treats the phoneme itself, rather than any further sphoṭa-entity, as the true bearer of linguistic meaning. A six-panel interactive deep-dive widget extends this material further: a side-by-side comparison of every documented variety of sphoṭa enumerated by Nāgeśabhaṭṭa; the pratibhā doctrine set against comparable notions of intuitive cognition elsewhere in Indian philosophy; a fuller documentary treatment of the Mīmāṃsā–Vaiyākaraṇa debate across its historical stages; the painter's-canvas and cloth-and-thread analogies examined together as a single documented argumentative strategy; a preview of how this paper's completed sphoṭa machinery is picked up by this sequence's later, more ritually and yogically oriented parts; and a browsable interactive glossary. A methodological appendix, expanded footnotes, bibliography, and glossary close the paper.
+
+  </p>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION I -->
+  <section id="sec-1">
+    <h2 class="blocktitle">Part II · Section I</h2>
+    <h2 class="roman">I.</h2>
+    <h2 class="section-name">What Part One Established, and What Remains</h2>
+
+    <h3>1.1 The Three Levels Already Named</h3>
+    <p>Part One's Section 4.3 documented sphoṭa as operating at three distinct linguistic levels — varṇa-sphoṭa at the level of the individual phoneme, pada-sphoṭa at the level of the word, and vākya-sphoṭa at the level of the complete sentence — and recorded Bhartṛhari's own documented and philosophically most distinctive position: that vākya-sphoṭa, the sentence grasped as a single unanalysable cognitive unit, is in fact primary, with the apparent decomposability of a sentence into words and words into phonemes read as a documented analytical convenience rather than a reflection of how meaning is actually, originally cognized.</p>
+
+    <h3>1.2 What That Section Left Undeveloped</h3>
+    <p>Part One's own introductory treatment named this three-level structure without documenting the specific grammatical and philosophical mechanism by which the tradition holds the levels to relate to one another: by what documented process does a sequence of vanishing phonemes yield, in a competent listener's cognition, the grasp of a single word; and by what further documented process does a sequence of words, each apparently bearing its own meaning, yield the grasp of a single, undivided sentence-meaning? This paper undertakes exactly that completion.</p>
+
+    <h3>1.3 The Method This Paper Applies Throughout</h3>
+    <p>Consistent with this series' recurring structural practice, each of this paper's core sections proceeds through four documented moments: lakṣaṇa, the technical definition of the concept under examination; prakriyā, the process by which the tradition holds that concept to operate; udāharaṇa, a documented example — most often one of Bhartṛhari's own kārikās, quoted here in transliteration and paraphrase rather than extended direct translation, consistent with this series' copyright practice — through which the concept is made concrete; and phala, the documented philosophical result or consequence the tradition draws from the concept once established.</p>
+
+    <div class="lpuf">
+      <div class="lpuf-row"><div class="lpuf-label">Lakṣaṇa</div><div class="lpuf-content">Technical definition of the concept examined in a given section.</div></div>
+      <div class="lpuf-row"><div class="lpuf-label">Prakriyā</div><div class="lpuf-content">The documented process by which the tradition holds the concept to operate — the mechanism, not merely the claim.</div></div>
+      <div class="lpuf-row"><div class="lpuf-label">Udāharaṇa</div><div class="lpuf-content">A documented example, most often a kārikā from the Vākyapadīya, given in transliteration and paraphrase.</div></div>
+      <div class="lpuf-row"><div class="lpuf-label">Phala</div><div class="lpuf-content">The documented philosophical consequence the tradition draws once the concept is established.</div></div>
+    </div>
+
+    <h3>1.4 Why This Paper Begins at Varṇa Rather Than Restating Vākya-Sphoṭa's Priority Immediately</h3>
+    <p>This paper's own expository order begins with varṇa-sphoṭa (Section II) rather than restating Bhartṛhari's priority claim for vākya-sphoṭa immediately, on the documented pedagogical ground the tradition itself follows: Bhartṛhari's own claim that the sentence is prior to its parts is best understood, this paper holds, only after the parts themselves — and the specific documented sense in which each is held to be a sphoṭa in its own right, despite ultimately being a mere analytical convenience — have first been examined on their own terms.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION II -->
+  <section id="sec-2">
+    <h2 class="blocktitle">Part II · Section II</h2>
+    <h2 class="roman">II.</h2>
+    <h2 class="section-name">Varṇa-Sphoṭa: The Phoneme Level Examined</h2>
+
+    <h3>2.1 Lakṣaṇa</h3>
+    <p>Varṇa-sphoṭa names the documented, if ultimately provisional, unitary meaning-bearing status classical sources attribute to the individual phoneme (varṇa) considered in isolation — the distinct syllables and letters that are, in the attached tradition's own documented formulation, the audible components a listener perceives as a sequence of sound.</p>
+
+    <h3>2.2 Prakriyā: How a Single Phoneme Is Held to Function</h3>
+    <p>This paper documents the process by which a single phoneme is held to operate within the wider sphoṭa system: each articulated sound (dhvani) that a speaker produces functions as the physical, transient manifesting cause of an underlying varṇa-sphoṭa, itself understood as one component contribution toward the larger word the phoneme sequence will eventually compose — the phoneme, on this account, is never grasped as bearing complete meaning on its own, but contributes a determinate increment of recognition toward the word not yet fully uttered.</p>
+
+    <h3>2.3 Udāharaṇa: The Documented Sequential Clarification</h3>
+    <p>The attached tradition documents this incremental process directly: each sound-unit helps in gaining a clearer grasp of what follows it, with the first sound in a word necessarily vague, the second somewhat clearer, and so on, until the last sound, aided by the accumulated impression of every sound that preceded it, finally reveals the word's complete meaning with precision — a documented process this paper reads as varṇa-sphoṭa's own operational description, rather than as a claim that each individual phoneme independently carries meaning of its own.</p>
+
+    <h3>2.4 Phala: Why Varṇa-Sphoṭa Cannot Be the System's Final Word</h3>
+    <p>This paper documents the consequence the tradition itself draws from this incremental structure: because no single phoneme, considered alone, yields complete meaning, varṇa-sphoṭa cannot itself be the level at which sphoṭa theory's own explanatory work is finally done — the phoneme-level analysis this section documents is necessary groundwork for Section III's own documented account of how a sequence of such phonemes is held to compose into the higher unit of the word.</p>
+
+    <div class="callout"><strong>Bridge to Section III</strong> — Having documented varṇa-sphoṭa as a necessary but insufficient unit, this paper turns next to the documented composition-process by which a sequence of phonemes yields a word.</div>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION III -->
+  <section id="sec-3">
+    <h2 class="blocktitle">Part II · Section III</h2>
+    <h2 class="roman">III.</h2>
+    <h2 class="section-name">The Documented Composition Problem: How Varṇas Build Toward Pada</h2>
+
+    <h3>3.1 Lakṣaṇa: The Problem Stated</h3>
+    <p>This paper documents a problem central to the entire sphoṭa project: if each phoneme vanishes the instant it is uttered and is at once replaced by the next in a rapid, one-directional sequence, then no two phonemes of a word are ever simultaneously present to a listener's awareness — the documented question this section examines is by what process a listener nonetheless grasps a word as a single unity rather than as a mere disconnected succession of momentary sound-events.</p>
+
+    <h3>3.2 Prakriyā: Accumulated Impression (Saṃskāra) as the Documented Mechanism</h3>
+    <p>Classical sources document the mechanism as one of accumulated mental impression: each phoneme, though physically vanished by the time the next is uttered, is held to leave behind a documented trace (saṃskāra) in the listener's cognition, with the final phoneme of the sequence serving as the trigger that draws upon every prior trace simultaneously, yielding a single, unified cognition of the whole word at the moment the last sound is heard — a process this paper reads as explaining how temporal succession in the stimulus can nonetheless yield atemporal unity in the resulting cognition.</p>
+
+    <h3>3.3 Udāharaṇa: The Documented Ghata Illustration</h3>
+    <p>The attached tradition documents this directly through the example of the word ghaṭa (pot), whose four sound-components — gh, a, ṭ, and a — can be uttered in any number of ways, whether naturally or in a modified manner, and at varying speeds without altering the word's underlying content: the variation belongs to vṛtti, the mode of utterance, examined fully in this paper's own Section XIII, while the accumulated impression that yields the unified cognition of ghaṭa itself remains constant across all such variation.</p>
+
+    <h3>3.4 Phala: Why This Mechanism Is Necessary Before Pada-Sphoṭa Can Be Documented</h3>
+    <p>This paper draws the documented consequence directly: without some such account of accumulated impression, the tradition would have no way to explain how a temporally sequential stimulus yields a non-sequential cognitive result, and pada-sphoṭa (Section IV) — the word grasped as a single unity — would remain an assertion rather than a documented, mechanistically explained claim.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION IV -->
+  <section id="sec-4">
+    <h2 class="blocktitle">Part II · Section IV</h2>
+    <h2 class="roman">IV.</h2>
+    <h2 class="section-name">Pada-Sphoṭa: The Word Level</h2>
+
+    <h3>4.1 Lakṣaṇa</h3>
+    <p>Pada-sphoṭa names the documented unitary meaning-bearing entity corresponding to a complete word — a level Bhartṛhari's own school holds to be, like varṇa-sphoṭa, analytically useful but not, in the final philosophical accounting this paper's Sections VI and XX–XXII will develop, cognitively primary.</p>
+
+    <h3>4.2 Prakriyā: How Pada-Sphoṭa Functions Within the Larger Sentence</h3>
+    <p>This paper documents pada-sphoṭa's own specific functional role: once a listener's accumulated phonemic impressions (Section 3.2) yield the grasp of a single word, that word-cognition itself functions, in turn, as one component contribution toward the still-larger cognition of the complete sentence in which the word occurs — pada-sphoṭa, on this account, occupies a documented intermediate position, itself a completed unity relative to its own constituent phonemes while remaining, relative to the sentence as a whole, merely a further increment of accumulating impression.</p>
+
+    <h3>4.3 Udāharaṇa: The Documented Multiplicity of Word-Meaning</h3>
+    <p>The attached tradition documents that Bhartṛhari does not deny a word's own vitality within a sentence, nor that a single word can carry multiple possible meanings; the tradition documents this through the analogy of the human eye, which possesses the natural power of seeing many things at once but perceives a particular object with clarity only when attention is deliberately focused upon it — a documented analogy this paper reads as explaining how the same word-form can, across different sentences, contribute different specific increments toward different final sentence-meanings, according to the speaker's own documented intent and the sentence's own context.</p>
+
+    <h3>4.4 Phala: The Documented Secondary Status of Word-Meaning</h3>
+    <p>This paper documents the consequence Bhartṛhari's school draws: because a word's own specific contribution depends on the context and intent within which it occurs, individual word-meanings are documented as secondary in relation to sphoṭa's own real object of cognition, the complete sentence — this paper's Section 4.1 above already anticipates the fuller documented argument this paper's Sections XIX–XXII will develop directly.</p>
+
+    <div class="shloka">
+      <div class="dev">पदे न वर्णा विद्यन्ते वर्णेष्वऽवयवा न च।<br>वाक्यात्पदानामत्यन्तं प्रविभागो न कश्चन॥</div>
+      <div class="translit">pade na varṇā vidyante varṇeṣv-avayavā na ca /<br>vākyāt padānām atyantaṃ pravibhāgo na kaścana // VP. 1.74</div>
+      <div class="gloss">This paper paraphrases rather than quotes the sense directly: phonemes are not documented as literally present within the word, nor are phonemes themselves documented as having further parts, and no absolute, ultimate division is documented as separating words from the sentence that contains them — the apparent divisions grammatical analysis introduces are, this verse is read as claiming, an analytical convenience rather than an ontological fact.</div>
+      <span class="cite">Vākyapadīya, Book I, as cited in the attached source material</span>
+    </div>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION V -->
+  <section id="sec-5">
+    <h2 class="blocktitle">Part II · Section V</h2>
+    <h2 class="roman">V.</h2>
+    <h2 class="section-name">The Documented Composition Problem: How Padas Build Toward Vākya</h2>
+
+    <h3>5.1 Lakṣaṇa: The Problem Restated at the Sentence Level</h3>
+    <p>This paper documents that the same structural problem Section III examined at the phoneme-to-word transition recurs, in a documented and philosophically more consequential form, at the word-to-sentence transition: a sentence's words are uttered one after another, each apparently bearing its own separable meaning, and yet a competent listener is documented to grasp the sentence's meaning not as a sum of separate word-meanings but as a single, unitary cognition arising only once the sentence's last word has been uttered.</p>
+
+    <h3>5.2 Prakriyā: The Documented Non-Completion of Meaning Before the Sentence Ends</h3>
+    <p>This paper documents the tradition's own explicit claim on this point: the communication of a sentence and its meaning is not held to be complete until the last word is uttered — word-sounds reach the listener sequentially, yet they are documented as merging, only upon completion, into a single unit grasped by the listener as one undivided cognition, with the identical sphoṭa that originated in the speaker's own mind documented as re-manifesting in the listener's mind, conveying the speaker's intended meaning.</p>
+
+    <h3>5.3 Udāharaṇa: The Documented Instantaneous Flash</h3>
+    <p>This paper documents that the listener's grasp of the speaker's intent, on this completion, is held to occur as an instantaneous flash of insight — the technical term pratibhā, examined fully in this paper's own Section XXIX, names precisely this documented instantaneous cognitive event, distinguished from any gradual, step-by-step assembly of the sentence's meaning from its component words.</p>
+
+    <h3>5.4 Phala: The Sentence as a Single Auditory Image</h3>
+    <p>This paper draws the documented consequence directly, consistent with Bhartṛhari's own stated position: sphoṭa, at the level of the complete sentence, is an auditory image that is indivisible and without inner sequence — a documented claim that supplies this paper's own bridge to Section VI's direct treatment of vākya-sphoṭa as the system's own primary and, in Bhartṛhari's own school, only ultimately real unit.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION VI -->
+  <section id="sec-6">
+    <h2 class="blocktitle">Part II · Section VI</h2>
+    <h2 class="roman">VI.</h2>
+    <h2 class="section-name">Vākya-Sphoṭa: Bhartṛhari's Documented Priority Claim</h2>
+
+    <h3>6.1 Lakṣaṇa</h3>
+    <p>Vākya-sphoṭa names the sentence's own underlying unitary meaning-bearing entity, held by Bhartṛhari's school to be, of sphoṭa's three documented levels, the only one that is cognitively and ontologically primary — varṇa-sphoṭa and pada-sphoṭa, this paper's Sections II and IV have already documented, are analytical conveniences relative to this single, genuinely unitary level.</p>
+
+    <h3>6.2 Prakriyā: Why the Sentence, Rather Than Its Words, Is Primary</h3>
+    <p>This paper documents Bhartṛhari's own explicit rejection of a rival, more atomistic account: the sentence is not, on Bhartṛhari's documented position, a mere collection of words (śabda-saṃghātaḥ) or an ordered series assembled from independently meaningful parts, but is a single, part-less linguistic unit whose primary documented function is precisely to combine its constituent words, in their complete utterance, so as to yield one meaning — a documented process this paper reads as making the sentence's own wholeness the explanatory ground for word-meaning, rather than the reverse.</p>
+
+    <h3>6.3 Udāharaṇa: The Opening Verse and the Rūpaṃ Sarva-Pada-Artham Formula</h3>
+    <div class="shloka">
+      <div class="dev">अनादिनिधनं ब्रह्म शब्दतत्त्वं यदक्षरम्।<br>विवर्ततेऽर्थभावेन प्रक्रिया जगतो यतः॥</div>
+      <div class="translit">anādi-nidhanaṃ brahma śabda-tattvaṃ yad-akṣaram /<br>vivartate 'rtha-bhāvena prakriyā jagato yataḥ // VP. 1.1</div>
+      <div class="gloss">Already introduced in Part One's Section 3.2, this paper documents this opening verse's own further relevance here: the imperishable word-principle from which the differentiated world's process (prakriyā) proceeds is, this paper reads, the same undivided ground that vākya-sphoṭa is documented to instantiate at the level of a single uttered sentence — the cosmic and the linguistic process, on this reading, share a single documented structure.</div>
+      <span class="cite">Vākyapadīya 1.1, as cited in the attached source material and in Part One, Section 3.2</span>
+    </div>
+    <p>This paper documents a second, directly relevant formula from the second book of the Vākyapadīya, already anticipated in Part One's Section 6.2: the meaning of every word is documented as ultimately bound to (nibandhanam) the overall meaning of the sentence (rūpaṃ sarva-pada-artham vākyārtha-nibandhanam), a formula this paper examines in full in Section XXII below.</p>
+
+    <h3>6.4 Phala: The Documented Philosophical Payoff</h3>
+    <p>This paper draws the consequence the tradition itself draws: because the sentence alone is documented as genuinely, ontologically unitary, the philosophical weight sphoṭa theory places on instantaneous, non-compositional cognition (pratibhā, Section XXIX) applies, in its most philosophically rigorous documented form, specifically and only at the level of vākya-sphoṭa — a documented conclusion this paper reads as the single most important result this paper's first six sections establish.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION VII -->
+  <section id="sec-7">
+    <h2 class="blocktitle">Part II · Section VII</h2>
+    <h2 class="roman">VII.</h2>
+    <h2 class="section-name">Dhvani and Sphoṭa: The Two Aspects of Upādāna-Śabda</h2>
+
+    <h3>7.1 Lakṣaṇa</h3>
+    <p>This paper documents Bhartṛhari's own foundational distinction, observed already by Patañjali before him: words or sentences (śabda) admit of being considered under two distinct aspects (upādāna-śabdeṣu) — as sound-patterns (dhvani or nāda), and as their cause and essence (artha).</p>
+
+    <h3>7.2 Prakriyā: How the Two Aspects Are Documented to Relate</h3>
+    <div class="shloka">
+      <div class="dev">द्वावुपादानशब्देषु शब्दौ शब्दविदो विदुः।<br>एको निमित्तं शब्दानामपरोऽर्थे प्रयुज्यते॥</div>
+      <div class="translit">dvāv upādāna-śabdeṣu śabdau śabdavido viduḥ /<br>eko nimittaṃ śabdānām aparo 'rthe prayujyate // VP. 1.44</div>
+      <div class="gloss">This paper paraphrases: those who understand the nature of words recognise words to be of two documented kinds — the one that serves as the cause of all further words, and the further kind of word actually used to convey a specific meaning. Some commentators, the tradition further documents, hold an intrinsic difference to exist between these two; others hold the second to be nothing more than a manifested form of the first.</div>
+      <span class="cite">Vākyapadīya 1.44, as cited in the attached source material</span>
+    </div>
+
+    <h3>7.3 Udāharaṇa: The Documented Relationship Between the Two</h3>
+    <div class="shloka">
+      <div class="dev">अविभक्तो विभक्तेभ्यो जायतेऽर्थस्य वाचकः।<br>शब्दस्तत्रार्थरूपात्मा सम्बन्धमुपगच्छति॥</div>
+      <div class="translit">avibhakto vibhaktebhyo jāyate 'rthasya vācakaḥ /<br>śabdas tatrārtha-rūpātmā saṃbandham upagacchati // VP. 1.45</div>
+      <div class="gloss">This paper paraphrases: the word that actually expresses a meaning is documented as arising, undivided, from words that are themselves divided (differentiated), with the word, in its own essential form, entering into relation with meaning. This paper reads this verse as documenting the precise moment at which the undifferentiated word-principle first takes on the capacity to signify a specific, differentiated meaning.</div>
+      <span class="cite">Vākyapadīya 1.45, as cited in the attached source material</span>
+    </div>
+
+    <h3>7.4 Phala: Why This Distinction Matters for Everything That Follows</h3>
+    <p>This paper documents the consequence this distinction carries for the whole of this paper's subsequent argument: dhvani, the outer, physically articulated sound-pattern, is documented to act as an outer garment or instrument for conveying sphoṭa's own inner essence, while sphoṭa itself remains, on this account, the true object of linguistic cognition — a documented asymmetry this paper's Sections VIII–IX examine through Bhartṛhari's own two central analogies.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION VIII -->
+  <section id="sec-8">
+    <h2 class="blocktitle">Part II · Section VIII</h2>
+    <h2 class="roman">VIII.</h2>
+    <h2 class="section-name">The Fire-in-Kindling-Wood Analogy</h2>
+
+    <h3>8.1 Lakṣaṇa</h3>
+    <p>This paper documents Bhartṛhari's own first major analogy for the dhvani–sphoṭa relationship: the relation between the supreme word-principle and the spoken word is documented as comparable to the relation between fire already inherent within firewood and the fire actually made manifest through the friction of rubbing fire-sticks together.</p>
+
+    <h3>8.2 Prakriyā and Udāharaṇa</h3>
+    <div class="shloka">
+      <div class="dev">आरणिस्थं यथा ज्योतिः प्रकाशान्तरकारणम्।<br>तद्वच्छब्दोऽपि बुद्धिस्थः श्रुतीनां कारणं पृथक्॥</div>
+      <div class="translit">araṇi-sthaṃ yathā jyotiḥ prakāśāntara-kāraṇam /<br>tadvac chabdo 'pi buddhi-sthaḥ śrutīnāṃ kāraṇaṃ pṛthak // VP. 1.47</div>
+      <div class="gloss">This paper paraphrases: just as the light latent within the kindling wood is documented as the cause of a further, separately manifested light once struck, so too the word residing within the intellect (buddhi) is documented as the separate cause of the sounds actually heard. The potential fire, once inflamed, is documented as illuminating both itself and other objects simultaneously — read here as an analogy for sphoṭa's own dual documented power, examined further in this paper's Section 8.4 below.</div>
+      <span class="cite">Vākyapadīya 1.47, as cited in the attached source material</span>
+    </div>
+    <div class="shloka">
+      <div class="dev">वितर्कितः पुरा बुद्ध्या क्वचिदर्थे निवेशितः।<br>करणेभ्यो विवृत्तेन ध्वनिना सोऽनुगृह्यते॥</div>
+      <div class="translit">vitarkitaḥ purā buddhyā kva cid arthe niveśitaḥ /<br>karaṇebhyo vivṛttena dhvaninā so 'nugṛhyate // VP. 1.48</div>
+      <div class="gloss">This paper paraphrases: the word, first deliberated upon by the intellect and directed toward a specific meaning, is documented as thereafter assisted or supported by the sound produced through the speech organs — a documented sequence this paper reads as specifying the causal order the fire analogy names only figuratively: intellectual formation first, physical articulation second.</div>
+      <span class="cite">Vākyapadīya 1.48, as cited in the attached source material</span>
+    </div>
+
+    <h3>8.3 Phala: Sphoṭa as Both Revealer and Revealed</h3>
+    <p>This paper documents the consequence the tradition draws directly from this analogy's own dual-illumination structure: a word, on this account, has a documented dual power — one to indicate or reveal itself, and a further, simultaneous power to indicate or reveal the thing symbolised by it — precisely as fire simultaneously reveals itself and the objects it illuminates. The word is thus documented as being at once prakāśa (the revealer) and prakāśyatvam (the revealed).</p>
+
+    <h3>8.4 A Documented Grammatical Antecedent</h3>
+    <p>This paper notes a documented antecedent already present in Pāṇini's own grammar, predating Bhartṛhari's own elaboration: Pāṇini is documented to have stated that it is through first conveying its own form that a word comes to convey its meaning (svaṃ rūpaṃ śabdasyāśabda-saṃjñā — Aṣṭādhyāyī 1.1.68) — a documented grammatical rule this paper reads as the technical seed from which Bhartṛhari's own fuller dual-power doctrine grows.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION IX -->
+  <section id="sec-9">
+    <h2 class="blocktitle">Part II · Section IX</h2>
+    <h2 class="roman">IX.</h2>
+    <h2 class="section-name">The Water-Reflection Analogy: How a Sequence-less Sphoṭa Appears Sequential</h2>
+
+    <h3>9.1 Lakṣaṇa</h3>
+    <p>This paper documents Bhartṛhari's own second major analogy, addressing a documented problem the fire analogy alone does not resolve: if sphoṭa is genuinely without inner sequence, why does it nonetheless appear, in actual utterance, to unfold through time exactly as the sounds that manifest it do?</p>
+
+    <h3>9.2 Prakriyā and Udāharaṇa</h3>
+    <div class="shloka">
+      <div class="dev">नादस्य क्रमजातत्वान्न पूर्वो न परश्च सः।<br>अक्रमः क्रमरूपेण भेदवानिव जायते॥</div>
+      <div class="translit">nādasya krama-jātatvān na pūrvo na paraś ca saḥ /<br>akramaḥ krama-rūpeṇa bhedavān iva jāyate // VP. 1.49</div>
+      <div class="gloss">This paper paraphrases: because articulated sound (nāda) itself arises sequentially, sphoṭa is documented as neither strictly prior to nor subsequent to that sequence; sphoṭa, though itself without sequence, is documented as appearing to take on differentiation in the manner of a sequence, precisely as if it possessed sequential parts, when in fact it does not.</div>
+      <span class="cite">Vākyapadīya 1.49, as cited in the attached source material</span>
+    </div>
+    <div class="shloka">
+      <div class="dev">प्रतिबिम्बं यथान्यत्र स्थितं तोयक्रियावशात्।<br>तत्प्रवृत्तिमिवान्वेति स धर्मः स्फोटनादयोः॥</div>
+      <div class="translit">pratibimbaṃ yathānyatra sthitaṃ toya-kriyā-vaśāt /<br>tat-pravṛttim ivānveti sa dharmaḥ sphoṭa-nādayoḥ // VP. 1.50</div>
+      <div class="gloss">This paper paraphrases: just as a reflection, though situated elsewhere than the object it reflects, appears to move as if following that object's own movement — because of a disturbance in the water's own surface rather than any actual movement of the object itself — this same documented characteristic holds of the relation between sphoṭa and nāda: the modifications the mental word appears to undergo in audible manifestation are of the same documented character as the apparent movement of a reflection disturbed by moving water.</div>
+      <span class="cite">Vākyapadīya 1.50, as cited in the attached source material</span>
+    </div>
+    <div class="shloka">
+      <div class="dev">आत्मरूपं यथा ज्ञाने ज्ञेयरूपं च दृश्यते।<br>अर्थरूपं तथा शब्दे स्वरूपं च प्रकाशते॥</div>
+      <div class="translit">ātma-rūpaṃ yathā jñāne jñeya-rūpaṃ ca dṛśyate /<br>artha-rūpaṃ tathā śabde sva-rūpaṃ ca prakāśate // VP. 1.51</div>
+      <div class="gloss">This paper paraphrases: just as, in an act of cognition, both the cognition's own form and the form of the object cognized are documented as simultaneously apparent, so too, in the word, both the form of the meaning and the word's own essential form are documented as simultaneously manifest — a formulation this paper reads as the analogy's own philosophical conclusion, restating Section 8.3's dual-power doctrine in the specific vocabulary of cognition theory.</div>
+      <span class="cite">Vākyapadīya 1.51, as cited in the attached source material</span>
+    </div>
+
+    <h3>9.3 Phala: Perfect Perception as Identity of Sphoṭa and Its Manifestation</h3>
+    <p>This paper documents the tradition's own further, closely related formula from the Vākyapadīya's second book, extending this analogy's conclusion: the essence or thought (sphoṭa) and the form of its manifestation (nāda or dhvani) are documented as two halves of a single entity, not distinct and separable (asyaivātmano bhedau śabdārthāv apṛthak-sthitau — VP. 2.31) — with perfect linguistic perception documented as occurring precisely when this underlying identity is fully grasped, a grasping the tradition attributes to the function of mind rather than of the external sense organs alone.</p>
+
+    <div class="callout"><strong>A Documented Comparative Note</strong> — Some scholars, the attached tradition records, have found Bhartṛhari's position here structurally close to the reflection (ābhāsa) doctrine formulated by the Trika philosophers of Kashmir, in which the Śaktis and their material forms as words are held identical with the Absolute, related as mirror to reflection — a documented comparison this paper registers here and treats more fully, with appropriate bracketing, in this paper's Tab Panel III below.</div>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION X -->
+  <section id="sec-10">
+    <h2 class="blocktitle">Part II · Section X</h2>
+    <h2 class="roman">X.</h2>
+    <h2 class="section-name">Two Aspects, One Word: Revisiting Upādāna-Śabda</h2>
+
+    <h3>10.1 Lakṣaṇa</h3>
+    <p>This paper documents a clarification the tradition itself supplies, guarding against a possible misreading of Sections VII–IX: the distinction between dhvani and sphoṭa, though analytically indispensable, is documented as not introducing two separately existing words, but two aspects under which a single word may be considered.</p>
+
+    <h3>10.2 Prakriyā and Udāharaṇa</h3>
+    <div class="shloka">
+      <div class="dev">भेदेनावगृहीतौ द्वौ शब्दधर्मावपोद्धृतौ।<br>भेदकार्येषु हेतुत्वमविरोधेन गच्छतः॥</div>
+      <div class="translit">bhedenāvagṛhītau dvau śabda-dharmāv apoddhṛtau /<br>bheda-kāryeṣu hetutvam avirodhena gacchataḥ // VP. 1.59</div>
+      <div class="gloss">This paper paraphrases: two properties of the word, artificially extracted and grasped as though distinct, are documented as each serving, without mutual contradiction, as the cause of different specific activities — a formulation this paper reads as licensing the dhvani/sphoṭa distinction's own practical, communicative usefulness while denying it any final ontological status.</div>
+      <span class="cite">Vākyapadīya 1.59, as cited in the attached source material</span>
+    </div>
+
+    <h3>10.3 Phala: Context-Relative Validity</h3>
+    <p>This paper documents the consequence the tradition draws: all elements extracted from the word through linguistic analysis — including the very dhvani/sphoṭa distinction this paper's Sections VII–IX have documented — are, on Bhartṛhari's own account, ultimately unreal in an absolute sense, yet valid within their own specific analytical context; each kind of communicative activity, this paper reads the tradition as holding, has its own documented reality that may differ from the realities pertinent to other kinds of activity, without this context-relativity undermining sphoṭa theory's own core claims.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XI -->
+  <section id="sec-11">
+    <h2 class="blocktitle">Part II · Section XI</h2>
+    <h2 class="roman">XI.</h2>
+    <h2 class="section-name">Intrinsic Difference or Mere Manifestation?</h2>
+
+    <h3>11.1 Lakṣaṇa</h3>
+    <p>This paper documents a specific internal disagreement the tradition itself records concerning the two aspects of upādāna-śabda already introduced in Section VII: is the relationship between the word-principle and the spoken word one of genuine ontological difference, or is the spoken word merely a manifested form of a single underlying principle?</p>
+
+    <h3>11.2 Prakriyā and Udāharaṇa</h3>
+    <div class="shloka">
+      <div class="dev">आत्मभेदं तयोः केचिदस्तीत्याहुः पुराणगाः।<br>बुद्धिभेदादभिन्नस्य भेदमेके प्रचक्षते॥</div>
+      <div class="translit">ātma-bhedaṃ tayoḥ ke cid astīty āhuḥ purāṇa-gāḥ /<br>buddhi-bhedād abhinnasya bhedam eke pracakṣate // VP. 1.46</div>
+      <div class="gloss">This paper paraphrases: some among the ancient authorities are documented as holding that an intrinsic difference (ātma-bheda) exists between the two aspects, while others hold that what is in fact a single, undivided reality merely appears differentiated on account of a difference in the intellect's own mode of grasping it — a documented disagreement this paper reads as internal to the Grammarian tradition itself, distinct from the wider dispute with Mīmāṃsā this paper's Sections XXXIV–XXXVIII examine.</div>
+      <span class="cite">Vākyapadīya 1.46, as cited in the attached source material</span>
+    </div>
+
+    <h3>11.3 Phala: Why Bhartṛhari's Own School Favours the Manifestation Reading</h3>
+    <p>This paper documents that Bhartṛhari's own subsequent argument, particularly the fire analogy of Section VIII and the reflection analogy of Section IX, is best read as favouring the second, non-difference position: dhvani is treated throughout as sphoṭa's own manifestation rather than as an ontologically separate entity standing merely in relation to it — a documented interpretive choice this paper reads as consistent with Bhartṛhari's own wider monistic commitment to Śabdabrahman, already established in Part One's Sections II and XI.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XII -->
+  <section id="sec-12">
+    <h2 class="blocktitle">Part II · Section XII</h2>
+    <h2 class="roman">XII.</h2>
+    <h2 class="section-name">Ātmarūpa and Artharūpa: The Word's Self-Revealing Structure</h2>
+
+    <h3>12.1 Lakṣaṇa</h3>
+    <p>This paper returns to VP. 1.51, already quoted in Section 9.2, to examine its own documented technical vocabulary directly: ātma-rūpa (the word's own form) and artha-rūpa (the form of the meaning) name, respectively, the word's documented capacity to reveal itself and its documented capacity to reveal its object.</p>
+
+    <h3>12.2 Prakriyā: Simultaneity Rather Than Sequence</h3>
+    <p>This paper documents the precise technical claim this verse makes: the two forms — the word's own and the meaning's — are documented as simultaneously apparent (dṛśyate ... prakāśate) rather than sequentially apprehended, a documented simultaneity this paper reads as the direct linguistic-cognitive parallel to the fire analogy's own claim (Section 8.3) that a single flame simultaneously illuminates both itself and other objects.</p>
+
+    <h3>12.3 Udāharaṇa: The Cognitive-Theoretic Framing</h3>
+    <p>This paper documents that Bhartṛhari's own choice to frame this claim in the vocabulary of jñāna (cognition) specifically, rather than remaining within grammatical vocabulary alone, signals a documented deliberate move: linguistic cognition, on this account, is held to instantiate the same general structure any act of cognition is documented to display, in which both the cognizing act's own nature and its object's nature are jointly manifest.</p>
+
+    <h3>12.4 Phala</h3>
+    <p>This paper draws the consequence: because word and meaning are documented as jointly, simultaneously manifest rather than related as a prior sign to a subsequently inferred referent, sphoṭa theory's own account of meaning-cognition is, on this paper's reading, structurally a form of direct perception (pratyakṣa) rather than of inference (anumāna) — a documented classification this paper's Tab Panel II examines further against the Nyāya objections it provoked.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XIII -->
+  <section id="sec-13">
+    <h2 class="blocktitle">Part II · Section XIII</h2>
+    <h2 class="roman">XIII.</h2>
+    <h2 class="section-name">Vṛtti: Variation in Utterance Without Variation in Sphoṭa</h2>
+
+    <h3>13.1 Lakṣaṇa</h3>
+    <p>Vṛtti names the documented technical category covering variation in the mode of a word's actual utterance — whether natural (prākṛta) or modified (vikṛta), and whether slow (vilambita), moderate (madhyama), or rapid (druta) — without this variation itself altering the word's underlying sphoṭa.</p>
+
+    <h3>13.2 Prakriyā: The Documented Independence of Sphoṭa From Vṛtti</h3>
+    <p>This paper documents the tradition's own explicit claim, already anticipated in this paper's Section 3.3: the word ghaṭa can be produced in any number of ways, naturally or in a modified manner, at any of several documented speeds, and the variation in speed or mode of utterance — vṛtti — is documented as altering only the form in which the word is uttered (dhvani), never the word's own content and sense (sphoṭa).</p>
+
+    <h3>13.3 Udāharaṇa: The Documented Lamp Analogy</h3>
+    <p>The attached tradition documents a further supporting analogy, distinct from but complementary to the fire and reflection analogies already examined: a pot illuminated by bright light can be seen clearly, and remains visible for a longer duration the longer clear light continues to fall upon it, with the pot's own visibility depending on the quality of light without the light's own variation altering the pot's own nature — a documented analogy this paper reads as illustrating vṛtti's own limited scope: variation in the conditions of manifestation, unlike variation in the manifested reality itself.</p>
+
+    <h3>13.4 Phala: Sphoṭa as the Changeless Element of Speech</h3>
+    <p>This paper documents the consequence the tradition draws directly: sphoṭa is, on this account, a changeless element of speech, an inner unity holding meaning together despite every documented variation vṛtti permits at the level of actual utterance — though this paper notes, consistent with Part One's own Section 2.3, that Bhartṛhari himself does not supply a single, fully precise technical definition of sphoṭa beyond this changeless-element characterisation, leaving later commentators (Sections XXIII–XXVII) to develop the concept's own further technical apparatus.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XIV -->
+  <section id="sec-14">
+    <h2 class="blocktitle">Part II · Section XIV</h2>
+    <h2 class="roman">XIV.</h2>
+    <h2 class="section-name">Closing Synthesis of the First Block</h2>
+
+    <h3>14.1 Consolidating Sections I–XIII</h3>
+    <p>This first block has documented the full compositional machinery Part One's Section IV only introduced: varṇa-sphoṭa's own necessary but insufficient status (Section II) and the accumulated-impression mechanism by which phonemes build toward pada-sphoṭa (Section III); pada-sphoṭa's own documented intermediate function (Section IV) and the completion-at-the-last-word mechanism by which words build toward vākya-sphoṭa (Section V); vākya-sphoṭa's own documented primacy (Section VI); the foundational dhvani/sphoṭa distinction (Section VII) and its two central analogies, fire (Section VIII) and water-reflection (Section IX); the distinction's own merely provisional status (Section X) and the internal Grammarian debate over whether it names a real or merely apparent difference (Section XI); the simultaneity of word-form and meaning-form (Section XII); and vṛtti's own documented independence from sphoṭa proper (Section XIII).</p>
+
+    <table class="series-table appendix-table">
+      <caption>This Block's Sections Mapped to Their Core Kārikā</caption>
+      <thead><tr><th>Section</th><th>Core Documented Claim</th><th>Primary Kārikā</th></tr></thead>
+      <tbody>
+        <tr><td>II–VI</td><td>Three-level composition, varṇa to pada to vākya</td><td>VP. 1.74</td></tr>
+        <tr><td>VII</td><td>Two aspects of upādāna-śabda</td><td>VP. 1.44–1.45</td></tr>
+        <tr><td>VIII</td><td>Fire-in-kindling-wood analogy</td><td>VP. 1.47–1.48</td></tr>
+        <tr><td>IX</td><td>Water-reflection analogy</td><td>VP. 1.49–1.51</td></tr>
+        <tr><td>X</td><td>Provisional status of the dhvani/sphoṭa distinction</td><td>VP. 1.59</td></tr>
+        <tr><td>XI</td><td>Internal debate on intrinsic vs. apparent difference</td><td>VP. 1.46</td></tr>
+        <tr><td>XIII</td><td>Vṛtti's independence from sphoṭa</td><td>Ghaṭa illustration</td></tr>
+      </tbody>
+    </table>
+
+    <h3>14.2 What the Second Block Undertakes</h3>
+    <p>This paper's second block turns from the grammatical composition-machinery this first block has documented to the two central illustrative analogies through which Bhartṛhari's tradition explains how a listener grasps a sentence as a single whole — the painter's canvas and Maṇḍana Miśra's cloth-and-thread — before completing the documented technical apparatus of apoddhāra, the priority of sentence-meaning, and the eightfold classification of sphoṭa later grammarians developed.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XV -->
+  <section id="sec-15">
+    <h2 class="blocktitle">Part II · Section XV</h2>
+    <h2 class="roman">XV.</h2>
+    <h2 class="section-name">The Painter's Analogy: Bhartṛhari's Three Documented Stages</h2>
+
+    <h3>15.1 Lakṣaṇa</h3>
+    <p>This paper documents Bhartṛhari's own extended analogy comparing sentence-communication to the creation of a painting, addressing directly the documented question this paper's Section V has already raised: how does a communication assembled through sequential physical acts nonetheless correspond to, and successfully convey, a single unified conception?</p>
+
+    <h3>15.2 Prakriyā: The Three Documented Stages</h3>
+    <p>The attached tradition documents the painter as passing through three distinct stages when composing a figure: first, the painter visualises the object and its spirit as a single composite unit; second, the painter visualises the same object as a figure possessing distinguishable parts; and third, only thereafter, the painter gradually and sequentially renders the figure onto the physical surface of a cloth or other medium.</p>
+
+    <h3>15.3 Udāharaṇa: Mapping the Three Stages Onto Speech</h3>
+    <p>This paper documents the mapping the tradition itself draws: the painter's first stage — the object grasped as a single composite whole — corresponds to paśyantī, already documented in Part One's Section VIII as the level at which meaning is grasped whole and prior to sequential structure; the second stage — the same object now conceived as possessing distinguishable parts — corresponds to madhyamā, the level of internal sequential rehearsal Part One's Section IX has already documented; and the third stage — the gradual physical rendering — corresponds to vaikharī, the fully externalised audible utterance Part One's Section X has documented.</p>
+
+    <h3>15.4 Phala</h3>
+    <p>This paper draws the consequence directly: the painter's own documented three-stage process supplies concrete, non-linguistic confirmation that a single unified conception can be, without contradiction, both grasped wholly at the outset and yet necessarily rendered sequentially in its physical execution — precisely the documented structure Sections VIII–IX have already established for sphoṭa's own relationship to its sequential vaikharī manifestation.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XVI -->
+  <section id="sec-16">
+    <h2 class="blocktitle">Part II · Section XVI</h2>
+    <h2 class="roman">XVI.</h2>
+    <h2 class="section-name">Maṇḍana Miśra's Cloth-and-Thread Analogy</h2>
+
+    <h3>16.1 Lakṣaṇa</h3>
+    <p>This paper documents a further, closely related analogy supplied not by Bhartṛhari directly but by Maṇḍana Miśra in the Sphoṭa-siddhi, his own commentarial defense of Bhartṛhari's doctrine, examined further in this paper's Section XXXVII.</p>
+
+    <h3>16.2 Prakriyā and Udāharaṇa</h3>
+    <p>Maṇḍana Miśra is documented to have illustrated the relationship between a sentence and its constituent words through the viewing-experience of a painting, read together with the further, related image of a woven cloth: when a picture is viewed, it is documented as conceived as a single whole over and above its various individual parts; similarly, the composite image a piece of woven cloth presents is documented as a genuine whole, quite distinct from the particular threads and colours that were, in fact, its material constituents.</p>
+
+    <h3>16.3 Phala: Wholes as More Than the Sum of Constituent Parts</h3>
+    <p>This paper documents the consequence Maṇḍana draws, and which this paper reads as directly supporting Bhartṛhari's own position: just as a viewer of a painting or a woven cloth rightly absorbs the picture and its spirit as a single integral unit, without seeking out or attending to the individual brushstrokes, shades, or threads that produced it, so too a competent listener rightly grasps a sentence and its meaning as a single integral unit, without needing to attend to the individual words that were, in fact, its material constituents.</p>
+
+    <div class="callout"><strong>A Documented Methodological Point</strong> — This paper notes that Maṇḍana's own choice of two closely related but distinct visual analogies — painting and woven cloth — rather than repeating a single image, is documented as reinforcing the same underlying claim from two independent directions: a viewed whole (painting) and a materially constructed whole (cloth) are each held to display the same documented priority of whole over parts.</div>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XVII -->
+  <section id="sec-17">
+    <h2 class="blocktitle">Part II · Section XVII</h2>
+    <h2 class="roman">XVII.</h2>
+    <h2 class="section-name">Communication of Thought: The Sentence as a Single Auditory Image</h2>
+
+    <h3>17.1 Lakṣaṇa</h3>
+    <p>This paper documents Bhartṛhari's own account of how communication is initiated and completed: the sentence, on this account, first exists in the speaker's own mind as a unity (sphoṭa) before any utterance begins.</p>
+
+    <h3>17.2 Prakriyā: From Speaker's Mind to Listener's Mind</h3>
+    <p>This paper documents the process the tradition attributes to successful communication: in giving form to a single unified thought, the speaker produces a documented series of distinct sounds in temporal sequence, one following another, such that the word-sounds might appear, to an inattentive listener, to be genuinely separated in time and space; in truth, this paper documents, they remain parts of a single entity throughout — the sentence itself — with the identical sphoṭa that originated in the speaker's mind documented as re-manifesting, upon the sentence's completion, in the listener's own mind.</p>
+
+    <h3>17.3 Udāharaṇa: Language Competence as Documented Instinct</h3>
+    <p>This paper documents the tradition's own further claim, anticipating Section XXIX's fuller treatment of pratibhā: those who already know a given language well are documented to genuinely listen to the sentence as a sentence, while those unfamiliar with the language may hear only a sequence of disconnected sound-bites — sphoṭa, in this specific documented sense, names the real, lived experience of listening to a sentence as a whole and grasping its meaning directly through perception rather than through subsequent inference.</p>
+
+    <h3>17.4 Phala</h3>
+    <p>This paper draws the consequence: because meaning, on this account, is documented as directly perceived rather than inferred, the tradition's own classification of pratibhā as a distinct pramāṇa (Tab Panel II) follows as a direct corollary rather than as an independent, additional claim.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XVIII -->
+  <section id="sec-18">
+    <h2 class="blocktitle">Part II · Section XVIII</h2>
+    <h2 class="roman">XVIII.</h2>
+    <h2 class="section-name">Sequence-less Unity Expressed Through Sequence</h2>
+
+    <h3>18.1 Lakṣaṇa</h3>
+    <p>This paper returns to VP. 1.49, already quoted in Section 9.2, to draw out a documented implication this paper's earlier treatment left partly implicit: the specific technical formula akramaḥ krama-rūpeṇa bhedavān iva jāyate — the sequence-less appearing, in the form of sequence, as if possessing differentiated parts — supplies, on this paper's reading, this paper's single most compact statement of sphoṭa theory's own central paradox.</p>
+
+    <h3>18.2 Prakriyā: Resolving the Apparent Contradiction</h3>
+    <p>This paper documents how the tradition resolves what might otherwise appear a straightforward contradiction — a single, sequence-less entity nonetheless appearing sequential: the appearance of sequence is documented as belonging entirely to the level of manifestation (dhvani, nāda), never to sphoṭa's own intrinsic nature, precisely as Section IX's water-reflection analogy has already established for the apparent movement of a reflection.</p>
+
+    <h3>18.3 Udāharaṇa: The Documented Parallel to Cognition Generally</h3>
+    <p>This paper documents that the tradition treats this structure as not unique to language: any complex cognition that must be reported or communicated sequentially, despite being originally grasped as a whole, is documented as displaying the identical structure — a documented generality this paper reads as consistent with the cognition-theoretic framing already established in Section XII.</p>
+
+    <h3>18.4 Phala</h3>
+    <p>This paper documents the consequence: because the sequence/non-sequence tension is resolved entirely at the level of manifestation rather than at the level of sphoṭa's own nature, the tradition's own insistence on sphoṭa's changeless unity (Section 13.4) remains, on this paper's reading, fully consistent with its equally firm documented insistence that communication is necessarily and irreducibly sequential in its outward form.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XIX -->
+  <section id="sec-19">
+    <h2 class="blocktitle">Part II · Section XIX</h2>
+    <h2 class="roman">XIX.</h2>
+    <h2 class="section-name">Words as Stepping Stones, Not Independent Meaning-Bearers</h2>
+
+    <h3>19.1 Lakṣaṇa</h3>
+    <p>This paper documents Bhartṛhari's own repeated insistence, already anticipated in this paper's Section 4.4, that individual words function as intermediate steps toward a sentence's meaning rather than as independent, self-standing bearers of meaning in their own right.</p>
+
+    <h3>19.2 Prakriyā: The Documented Root-and-Suffix Parallel</h3>
+    <p>This paper documents the analogy the tradition itself supplies: just as a grammatical root or suffix, considered entirely on its own, has no independent meaning of its own outside the fully formed word it helps compose, so too the meanings of individual words are documented as having no independent existence outside the sentence they help compose — a documented parallel this paper reads as extending the compositional logic already established for phonemes (Section III) one further level upward, to words themselves.</p>
+
+    <h3>19.3 Udāharaṇa: What This Claim Does Not Deny</h3>
+    <p>This paper documents explicitly what Bhartṛhari's own position does not claim: the tradition does not deny that a word plays a vital and irreplaceable role within a sentence, nor that a single word can, in the right context, carry multiple possible meanings — Section 4.3's own eye analogy is documented as addressing precisely this point, that a word's specific contribution is determined by the speaker's own intent and the sentence's own context, without this context-dependence granting the word independent, self-standing meaning outside that context.</p>
+
+    <h3>19.4 Phala</h3>
+    <p>This paper draws the consequence directly: because word-meaning is documented as always already context-dependent, grammatical analysis that extracts a word from its sentence and treats its meaning as freestanding is, on Bhartṛhari's account, a documented pedagogical convenience — useful for the study of language and grammar, this paper's Section XX documents, but not suitable as a description of how meaning actually functions in the real communicative world of speakers and listeners (vyavahāra).</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XX -->
+  <section id="sec-20">
+    <h2 class="blocktitle">Part II · Section XX</h2>
+    <h2 class="roman">XX.</h2>
+    <h2 class="section-name">Apoddhāra: The Artificial Extraction of Parts</h2>
+
+    <h3>20.1 Lakṣaṇa</h3>
+    <p>Apoddhāra names the documented technical process of linguistic analysis by which a sentence is artificially split into its constituent words, and words in turn into roots, suffixes, and syllables, for purposes of grammatical study.</p>
+
+    <h3>20.2 Prakriyā: Useful Exercise, Not Ontological Description</h3>
+    <p>This paper documents Bhartṛhari's own explicit, carefully qualified position on apoddhāra: such artificial extraction of parts from an integral unit may indeed be a useful exercise for the study of a language and its grammar, yet this documented fragmentary approach serves hardly any purpose, and is not suitable, in Bhartṛhari's own explicit judgment, for describing the real world in which men and women actually live, transact (vyāpāra), and communicate verbally (vyavahāra).</p>
+
+    <h3>20.3 Udāharaṇa: The Documented Speaker–Listener Situation</h3>
+    <p>This paper documents the tradition's own account of ordinary speech: in any genuine speech situation, where a speaker communicates an idea and a listener grasps the uttered speech, communication is documented as always occurring through the complete statement — the speaker thinks and communicates as a unity, and the listener grasps and understands the resulting series of word-sounds, in the end, as a single unit, precisely as this paper's Section XVII has already documented.</p>
+
+    <h3>20.4 Phala</h3>
+    <p>This paper draws the consequence the tradition itself draws: apoddhāra remains, on this account, a documented and legitimate analytical tool for grammatical pedagogy specifically, while never itself constituting a correct account of how meaning is actually generated, transmitted, or grasped in genuine linguistic communication — a documented distinction between analytical method and ontological description this paper's Section XXI extends into the wider claim that all difference presupposes prior unity.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXI -->
+  <section id="sec-21">
+    <h2 class="blocktitle">Part II · Section XXI</h2>
+    <h2 class="roman">XXI.</h2>
+    <h2 class="section-name">Abheda-Pūrvakā Bhedāḥ: Difference Presupposes Unity</h2>
+
+    <h3>21.1 Lakṣaṇa</h3>
+    <p>This paper documents a further, more general metaphysical formula Bhartṛhari supplies, extending apoddhāra's own specific linguistic claim into a broader documented principle: all differences presuppose a prior unity (abheda-pūrvakā hi bhedāḥ).</p>
+
+    <h3>21.2 Prakriyā and Udāharaṇa</h3>
+    <div class="shloka">
+      <div class="dev">अभेदपूर्वका भेदाः कल्पिता वाक्यवादिभिः।<br>भेदपूर्वानभेदांस्तु मन्यन्ते पददर्शिनः॥</div>
+      <div class="translit">abheda-pūrvakā bhedāḥ kalpitā vākya-vādibhiḥ /<br>bheda-pūrvān abhedāṃs tu manyante pada-darśinaḥ // VP. 2.57</div>
+      <div class="gloss">This paper paraphrases: those who hold the sentence to be primary (vākya-vādins, Bhartṛhari's own documented position) construe differences as themselves grounded in a prior unity, whereas those who instead see the word as primary (pada-darśins) hold, conversely, that any apparent unity is itself grounded in prior differences — a documented formula this paper reads as stating, in its most general and abstract form, the precise disagreement this paper's Sections IV–VI have already examined at the specific level of word versus sentence.</div>
+      <span class="cite">Vākyapadīya 2.57, as cited in the attached source material</span>
+    </div>
+
+    <h3>21.3 Phala: Why Bhartṛhari Requires This General Principle</h3>
+    <p>This paper documents the consequence Bhartṛhari draws, and which this paper reads as necessary for the coherence of his entire system: where genuine differences and parts are documented to exist, an underlying unity is documented as necessarily also present, since otherwise, this paper reads the tradition as arguing, one part would bear no intelligible relation to another, and each would in effect constitute an entirely separate world unto itself — a documented metaphysical requirement this paper reads as directly underwriting the priority-of-the-whole claim already established for vākya-sphoṭa in Section VI.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXII -->
+  <section id="sec-22">
+    <h2 class="blocktitle">Part II · Section XXII</h2>
+    <h2 class="roman">XXII.</h2>
+    <h2 class="section-name">Vākyārtha-Nibandhanam: Word-Meaning Bound to Sentence-Meaning</h2>
+
+    <h3>22.1 Lakṣaṇa</h3>
+    <p>This paper documents the specific formula, already anticipated in Section 6.3, through which Bhartṛhari states the final, practical consequence of vākya-sphoṭa's priority: the meaning of every constituent word is documented as ultimately bound to, and dependent upon, the overall meaning of the sentence in which it occurs.</p>
+
+    <h3>22.2 Prakriyā and Udāharaṇa</h3>
+    <div class="shloka">
+      <div class="gloss"><em>rūpaṃ sarva-pada-arthānāṃ vākyārtha-nibandhanam</em> — VP. 2.325, paraphrased rather than quoted in extended form: this paper documents the claim that the specific form each individual word's meaning ultimately takes is bound to (nibandhanam) the sentence's own overall meaning, rather than the sentence's meaning being merely assembled, after the fact, from independently fixed word-meanings.</div>
+      <span class="cite">Vākyapadīya 2.325, as cited in the attached source material</span>
+    </div>
+    <div class="shloka">
+      <div class="gloss"><em>arthaḥ sahabhūteṣu vartate</em> — VP. 2.115, paraphrased: the primary documented function of words is precisely to combine into a sentence — meaning, on this account, properly belongs to words considered together (sahabhūteṣu) in their complete utterance, rather than to words considered severally and in isolation.</div>
+      <span class="cite">Vākyapadīya 2.115, as cited in the attached source material</span>
+    </div>
+
+    <h3>22.3 Phala</h3>
+    <p>This paper draws the consequence directly: these two documented formulas together supply the specific technical mechanism — meaning-dependence running from sentence down to word, rather than the reverse — through which Bhartṛhari's own general priority claim (Section VI) and general metaphysical principle (Section XXI) are jointly cashed out at the level of ordinary grammatical analysis, closing this paper's own documented case for vākya-sphoṭa's primacy before this paper turns, in its next block, to the later grammarians' own further technical elaboration of sphoṭa's varieties.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXIII -->
+  <section id="sec-23">
+    <h2 class="blocktitle">Part II · Section XXIII</h2>
+    <h2 class="roman">XXIII.</h2>
+    <h2 class="section-name">Nāgeśabhaṭṭa's Eightfold Classification of Sphoṭa</h2>
+
+    <h3>23.1 Lakṣaṇa</h3>
+    <p>This paper documents that later grammarians did not leave Bhartṛhari's own three-level structure (Sections II, IV, VI) untouched, but developed it further into a documented eightfold classification, most fully recorded in Nāgeśabhaṭṭa's Parama-laghu-mañjūṣā.</p>
+
+    <h3>23.2 Prakriyā: The Eight Documented Varieties</h3>
+    <p>This paper documents Nāgeśabhaṭṭa's own eight enumerated varieties: varṇa-sphoṭa, pada-sphoṭa, vākya-sphoṭa, varṇa-jāti-sphoṭa, pada-jāti-sphoṭa, vākya-jāti-sphoṭa, akhaṇḍa-pada-sphoṭa, and akhaṇḍa-vākya-sphoṭa — a documented expansion this paper reads as distinguishing, at each of the three original levels, between the sphoṭa as an individual instance (vyakti) and the sphoṭa as a universal (jāti) common across every correct utterance.</p>
+
+    <table class="series-table">
+      <caption>Nāgeśabhaṭṭa's Eightfold Sphoṭa</caption>
+      <thead><tr><th>Variety</th><th>Documented Character</th></tr></thead>
+      <tbody>
+        <tr><td>Varṇa-sphoṭa</td><td>Individual phoneme-instance</td></tr>
+        <tr><td>Pada-sphoṭa</td><td>Individual word-instance</td></tr>
+        <tr><td>Vākya-sphoṭa</td><td>Individual sentence-instance</td></tr>
+        <tr><td>Varṇa-jāti-sphoṭa</td><td>Universal common to a phoneme's every correct utterance</td></tr>
+        <tr><td>Pada-jāti-sphoṭa</td><td>Universal common to a word's every correct utterance</td></tr>
+        <tr><td>Vākya-jāti-sphoṭa</td><td>Universal common to a sentence's every correct utterance</td></tr>
+        <tr><td>Akhaṇḍa-pada-sphoṭa</td><td>The word as an undivided (akhaṇḍa) unit</td></tr>
+        <tr class="current"><td>Akhaṇḍa-vākya-sphoṭa</td><td>The sentence as an undivided unit — documented as alone essential (Section XXIV)</td></tr>
+      </tbody>
+    </table>
+
+    <h3>23.3 Udāharaṇa and Phala</h3>
+    <p>This paper documents the tradition's own explicit evaluative judgment on this eightfold expansion: of the eight documented varieties, it is only the last, akhaṇḍa-vākya-sphoṭa, that is held to correspond to sphoṭa's own essential nature exactly as Bhartṛhari originally envisioned it; the remaining seven, this paper's Section XXIV documents further, are treated by the tradition itself as classroom exercises of real but strictly limited pedagogical value.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXIV -->
+  <section id="sec-24">
+    <h2 class="blocktitle">Part II · Section XXIV</h2>
+    <h2 class="roman">XXIV.</h2>
+    <h2 class="section-name">Akhaṇḍa-Vākya-Sphoṭa as the Doctrine's True Core</h2>
+
+    <h3>24.1 Lakṣaṇa</h3>
+    <p>Akhaṇḍa-vākya-sphoṭa names, of Nāgeśabhaṭṭa's eight documented varieties, the sentence considered strictly as an undivided linguistic unit and the sole documented conveyor of meaning in sphoṭa theory's own final, essential accounting.</p>
+
+    <h3>24.2 Prakriyā: Why the Other Seven Remain Merely Useful</h3>
+    <p>This paper documents the tradition's own reasoning for this evaluative ranking: though the other seven documented varieties possess no independent ontological merit of their own, they nonetheless serve a genuine, documented practical purpose, since they enable the beginning grammar student to progress, by graduated stages, toward a correct understanding of akhaṇḍa-vākya-sphoṭa's own true nature — a documented pedagogical structure this paper reads as directly consistent with Section 23.1's own eightfold expansion being a later, more technically differentiated elaboration built upon, rather than replacing, Bhartṛhari's own original three-level and single-priority structure.</p>
+
+    <h3>24.3 Udāharaṇa: This Section's Own Place in This Paper's Structure</h3>
+    <p>This paper notes explicitly that this section's own conclusion directly confirms, from a documented later commentarial vantage point, the specific priority claim this paper's own Section VI already established directly from Bhartṛhari's own root text — a documented convergence between root text and later commentarial elaboration this paper reads as itself evidence of the doctrine's own sustained internal coherence across the centuries separating Bhartṛhari from Nāgeśabhaṭṭa.</p>
+
+    <h3>24.4 Phala</h3>
+    <p>This paper draws the consequence: because akhaṇḍa-vākya-sphoṭa alone is documented as sphoṭa theory's own essential core, this paper's remaining sections on sphoṭa's etymology (Section XXV), its two documented planes (Section XXVI), and its external and internal aspects (Section XXVII) should each be read as further specifying this single, essential akhaṇḍa-vākya-sphoṭa, rather than as introducing yet further independent varieties.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXV -->
+  <section id="sec-25">
+    <h2 class="blocktitle">Part II · Section XXV</h2>
+    <h2 class="roman">XXV.</h2>
+    <h2 class="section-name">The Etymology of Sphoṭa: Bursting Forth, Blossoming</h2>
+
+    <h3>25.1 Lakṣaṇa</h3>
+    <p>This paper documents that the technical term sphoṭa does not translate easily into English, and that the tradition itself, together with modern scholarship engaging it, has proposed several only partially adequate renderings.</p>
+
+    <h3>25.2 Prakriyā: The Root Sphuṭ</h3>
+    <p>This paper documents the term's own derivation from the Sanskrit root sphuṭ, meaning to burst forth, while also documenting the root's own further, broader sense of what is revealed or made explicit — a documented dual sense this paper reads as directly reflecting sphoṭa's own dual function, already established in Section 8.3, as both revealer and revealed.</p>
+
+    <h3>25.3 Udāharaṇa: Two Documented Technical Statements of the Term</h3>
+    <p>This paper documents Nāgeśabhaṭṭa's own explicit gloss in the Sphoṭa-vāda — sphuṭati prakāśate artho asmād iti sphoṭaḥ, that from which meaning bursts forth or becomes manifest, equivalent in sense to vācaka, the expresser — together with Sarva-darśana-saṃgraha's own related documented gloss attributed to Mādhava: sphuṭyate vyajyate varṇair iti sphoṭaḥ, that which is manifested or revealed by the phonemes. This paper reads Mādhava's own account as documenting sphoṭa in two complementary senses simultaneously — as that from which meaning bursts forth, and as that which is itself made explicit by the spoken letters.</p>
+
+    <h3>25.4 A Documented Modern Caution on Translation</h3>
+    <p>This paper notes a documented modern scholarly caution against the common English rendering "explosion": sphoṭa, on this documented alternative reading, is better understood as a "blossoming" — a rendering this paper reads as better preserving the term's own connotation of gradual, organic revealing rather than sudden violent rupture, consistent with the graduated, accumulating-impression process this paper's Section III has already documented.</p>
+
+    <h3>25.5 Phala</h3>
+    <p>This paper draws the consequence: sphoṭa, understood through its own etymology, names a single entity that is simultaneously the two-sided coin Section 25.3 has already documented — manifested by the word's own sound on one side, and itself revealing the word's own meaning on the other — making sphoṭa, in its most compact documented definition, both the word and its meaning at once.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXVI -->
+  <section id="sec-26">
+    <h2 class="blocktitle">Part II · Section XXVI</h2>
+    <h2 class="roman">XXVI.</h2>
+    <h2 class="section-name">Sphoṭa at Two Documented Planes: Metaphysical and Empirical</h2>
+
+    <h3>26.1 Lakṣaṇa</h3>
+    <p>This paper documents that Bhartṛhari's own treatment of sphoṭa operates, throughout, at two distinguishable documented planes: a metaphysical plane, already the primary subject of Part One, and an empirical plane, this paper's own primary subject.</p>
+
+    <h3>26.2 Prakriyā: The Metaphysical Plane</h3>
+    <p>This paper documents the metaphysical plane's own core claim, already established in Part One's Sections II–III: Brahman itself is documented as first manifesting as sound and only thereafter as form, with Śabdabrahman — the manifester, understood as Logos or Word — documented as the very power through which the Lord is held to manifest throughout the universe, liberation itself documented as consisting in attaining unity with this supreme word-principle.</p>
+
+    <h3>26.3 Prakriyā: The Empirical Plane</h3>
+    <p>This paper documents the empirical plane as this paper's own primary domain throughout Sections II–XXV: Bhartṛhari's concern, at this plane, is with the actual process of communicating meaning — the documented word-and-sound distinctions (Section VII), word-meaning specifically (Sections IV, XIX), the unitary nature of the whole sentence (Section VI), the word-object connection (Section XII), and the graded levels of speech already established in Part One's Sections VI–X — with this plane's own focus resting throughout on cognition and language as such, rather than on liberation directly.</p>
+
+    <h3>26.4 Phala: Why Both Planes Are Required Together</h3>
+    <p>This paper draws the consequence: because consciousness and thought are documented as genuinely intertwined in Bhartṛhari's system, grammar itself becomes, on this account, a documented path to liberation — this paper reads the metaphysical and empirical planes as therefore not two separate doctrines loosely associated under a shared name, but as a single monistic philosophy grounded specifically in Sanskrit grammar, in which the empirical analysis this paper has undertaken throughout Sections II–XXV is never merely technical but is always already metaphysically consequential.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXVII -->
+  <section id="sec-27">
+    <h2 class="blocktitle">Part II · Section XXVII</h2>
+    <h2 class="roman">XXVII.</h2>
+    <h2 class="section-name">Bāhya and Ābhyantara: External and Internal Sphoṭa</h2>
+
+    <h3>27.1 Lakṣaṇa</h3>
+    <p>This paper documents a further documented distinction Bhartṛhari draws, orthogonal to but compatible with the metaphysical/empirical distinction of Section XXVI: sphoṭa is documented as being both external (bāhya) and internal (ābhyantara).</p>
+
+    <h3>27.2 Prakriyā: Jāti and Vyakti Within the External Aspect</h3>
+    <p>This paper documents that understanding sphoṭa as an external entity specifically requires, in turn, understanding it under two further documented aspects: as universal (jāti) and as individual or specific instance (vyakti) — a documented internal structure this paper reads as the direct conceptual ancestor of Nāgeśabhaṭṭa's own later, fuller eightfold jāti/vyakti classification already documented in Section XXIII.</p>
+
+    <h3>27.3 Udāharaṇa: Patañjali's Own Prior Documented Position</h3>
+    <p>This paper documents a further, earlier documented antecedent already noted in Part One's Section III: Patañjali himself had already held sphoṭa to be both internal and external, with sphoṭa's internal form documented as the word-meaning's own innate essence, and its external aspect documented as the uttered sound perceived by the sense organs, serving merely to manifest the inner sphoṭa together with its own inherent word-meaning — though, this paper notes, Patañjali's own documented sphoṭa could be either a single letter (varṇa) or a fixed pattern of letters (pada), a documented scope narrower than Bhartṛhari's own eventual extension of the doctrine to the complete sentence (Section VI).</p>
+
+    <h3>27.4 Phala</h3>
+    <p>This paper draws the consequence: the bāhya/ābhyantara distinction, read together with Patañjali's own prior, narrower documented position, supplies this paper's own final piece of evidence that Bhartṛhari's mature doctrine — vākya-sphoṭa's priority, the full three-level compositional machinery, and the eightfold later elaboration — represents a documented historical development and technical refinement of an already-existing grammatical concept, rather than an entirely unprecedented philosophical invention.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXVIII -->
+  <section id="sec-28">
+    <h2 class="blocktitle">Part II · Section XXVIII</h2>
+    <h2 class="roman">XXVIII.</h2>
+    <h2 class="section-name">Closing Synthesis of the Second Block</h2>
+
+    <h3>28.1 Consolidating Sections XV–XXVII</h3>
+    <p>This second block has extended this paper's first block across two documented illustrative analogies — the painter's three stages (Section XV) and Maṇḍana Miśra's cloth (Section XVI) — the tradition's own account of communication as a single auditory image (Section XVII) and its central sequence-less-through-sequence paradox (Section XVIII), the documented status of words as stepping stones rather than independent meaning-bearers (Section XIX) formalised through apoddhāra (Section XX) and the general abheda-pūrvakā principle (Section XXI), the specific vākyārtha-nibandhanam mechanism (Section XXII), Nāgeśabhaṭṭa's later eightfold classification (Section XXIII) and its own documented culmination in akhaṇḍa-vākya-sphoṭa (Section XXIV), and finally sphoṭa's own etymology (Section XXV), its two metaphysical/empirical planes (Section XXVI), and its external/internal aspects (Section XXVII).</p>
+
+    <table class="series-table appendix-table">
+      <caption>This Paper's First Two Blocks Compared</caption>
+      <thead><tr><th>Block</th><th>Sections</th><th>Primary Method</th></tr></thead>
+      <tbody>
+        <tr><td>First block</td><td>I–XIV</td><td>The compositional machinery of varṇa, pada, and vākya; the dhvani/sphoṭa distinction and its two central analogies</td></tr>
+        <tr><td>Second block</td><td>XV–XXVIII</td><td>Illustrative analogies for unity-in-sequence; the priority of sentence-meaning formalised; later commentarial classification and etymology</td></tr>
+      </tbody>
+    </table>
+
+    <h3>28.2 What the Third Block Undertakes</h3>
+    <p>This paper's third and final block turns to pratibhā, the flash of intuitive insight through which vākya-sphoṭa is finally, actually grasped, before documenting in full the historical roll of Sphoṭavādins and their opponents that Part One's Section V introduced only in outline.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXIX -->
+  <section id="sec-29">
+    <h2 class="blocktitle">Part II · Section XXIX</h2>
+    <h2 class="roman">XXIX.</h2>
+    <h2 class="section-name">Pratibhā: The Flash of Understanding</h2>
+
+    <h3>29.1 Lakṣaṇa</h3>
+    <p>Pratibhā names the documented instantaneous, non-sequential flash of intuitive insight through which a sentence's complete meaning, once its final word has been uttered, is finally and wholly grasped by a competent listener.</p>
+
+    <h3>29.2 Prakriyā and Udāharaṇa</h3>
+    <div class="shloka">
+      <div class="dev">विच्छेदग्रहणेऽर्थानां प्रतिभान्यैव जायते।<br>वाक्यार्थ इति तामाहुः पदार्थैरुपपादितम्॥</div>
+      <div class="translit">viccheda-grahaṇe 'rthānāṃ pratibhānyaiva jāyate /<br>vākyārtha iti tām āhuḥ padārthair upapāditam // VP. 2.143</div>
+      <div class="gloss">This paper paraphrases: when meanings are grasped only in a divided, piecemeal fashion, an altogether different further insight (pratibhā) is documented as subsequently arising, and it is this further insight — established with the help of the individual word-meanings, yet not itself reducible to them — that is documented as properly called the sentence's meaning (vākyārtha).</div>
+      <span class="cite">Vākyapadīya 2.143, as cited in the attached source material</span>
+    </div>
+
+    <h3>29.3 Phala: Pratibhā as Object of Direct Perception</h3>
+    <p>This paper documents the consequence directly, consistent with Section 17.4's own classification: the complete meaning of a sentence, on this account, is grasped as a unity, instantaneously (pratyakṣa), in this documented flash of insight — sphoṭa's own object of cognition is thus, this paper reads the tradition as holding, not inferred through a chain of reasoning from the individual word-meanings, but genuinely, directly perceived.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXX -->
+  <section id="sec-30">
+    <h2 class="blocktitle">Part II · Section XXX</h2>
+    <h2 class="roman">XXX.</h2>
+    <h2 class="section-name">The Six Documented Sources of Pratibhā</h2>
+
+    <h3>30.1 Lakṣaṇa</h3>
+    <p>This paper documents that pratibhā is not held to arise from a single documented source, but from six distinguishable ones, jointly enumerated in the Vākyapadīya's second book.</p>
+
+    <h3>30.2 Prakriyā and Udāharaṇa</h3>
+    <div class="shloka">
+      <div class="dev">स्वभावाचरणाभ्यासयोगाऽदृष्टोपपादिताम्।<br>विशिष्टोपहितां चेति प्रतिभां षड्विधां विदुः॥</div>
+      <div class="translit">svabhāva-ācaraṇā-abhyāsa-yogā-adṛṣṭa-upapāditām /<br>viśiṣṭopahitāṃ ceti pratibhāṃ ṣaḍvidhāṃ viduḥ // VP. 2.152</div>
+      <div class="gloss">This paper paraphrases: pratibhā is documented as known to be sixfold, arising respectively from inborn nature (svabhāva), from disciplined action or conduct (ācaraṇa), from repeated practice (abhyāsa), from meditative discipline (yoga), from unseen or invisible prior causes (adṛṣṭa), and from instruction specifically handed down by the wise, in each case further qualified by the specific individual's own particular circumstances.</div>
+      <span class="cite">Vākyapadīya 2.152, as cited in the attached source material</span>
+    </div>
+
+    <h3>30.3 Udāharaṇa: Pratibhā Beyond the Human</h3>
+    <p>This paper documents a further, striking extension the tradition itself records: pratibhā is not documented as an exclusively human faculty — even birds and animals are documented as possessing this basic instinctive awareness, whether acquired directly or through the recollection (saṃskāra or vāsanā) of it, with every being documented as acting upon and depending on this same inborn intuition, and even ordinary human linguistic competence and performance documented as itself an inborn virtue of this same pratibhā.</p>
+
+    <h3>30.4 Phala</h3>
+    <p>This paper documents the tradition's own further qualification, closely related to Part One's Section 7.2: pratibhā, though it guides a person toward correct understanding (prajñā) and correct conduct (iti-kartavyatā), and though it is in everyone's documented experience, cannot itself be precisely captured or pinned down in words (anākhyena) — a documented apophatic quality this paper reads as consistent with parā vāk's own similarly indescribable character already established in Part One's Section VII.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXXI -->
+  <section id="sec-31">
+    <h2 class="blocktitle">Part II · Section XXXI</h2>
+    <h2 class="roman">XXXI.</h2>
+    <h2 class="section-name">The Kamalam Illustration: Śeṣa Kṛṣṇa's Documented Example</h2>
+
+    <h3>31.1 Lakṣaṇa</h3>
+    <p>This paper documents a concrete illustration of the progressive-clarification process already established in Section 2.3, supplied by Śeṣa Kṛṣṇa, a documented sixteenth-century philosopher and commentator, in his own treatise on sphoṭa doctrine, the Sphoṭa-tattva-nirūpaṇa.</p>
+
+    <h3>31.2 Prakriyā and Udāharaṇa</h3>
+    <p>This paper documents Śeṣa Kṛṣṇa's own illustration directly: when a speaker utters the sound ka with the documented intention of eventually saying kamalam (lotus), a listener already knows that a word beginning with ka is being spoken; when the speaker utters the next syllable, ma, the listener gains a further clue, narrowing the range of possible words to those beginning with kama, though the word itself remains not yet fully determined — the listener at this stage cannot yet distinguish, for instance, between kamanam and kamalam; only once the final sound, lam, is uttered does the listener finally and fully grasp the complete, specific word.</p>
+
+    <h3>31.3 Phala: The Function of Letters in Building the Higher Unit</h3>
+    <p>This paper draws the consequence Śeṣa Kṛṣṇa himself draws: it is specifically through the perception of the word's own last letter that a listener is documented as reaching valid cognition (pramā) of the word as a whole — the documented function of the individual letters, on this account, is precisely and only to build up the higher unit, in this specific illustration's case the word, exactly as this paper's Section III has already documented through the accumulated-impression mechanism.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXXII -->
+  <section id="sec-32">
+    <h2 class="blocktitle">Part II · Section XXXII</h2>
+    <h2 class="roman">XXXII.</h2>
+    <h2 class="section-name">The Rope-and-Snake Analogy: Error and Progressive Cognition</h2>
+
+    <h3>32.1 Lakṣaṇa</h3>
+    <p>This paper documents a further, well-documented illustration the tradition applies to sphoṭa's own progressive clarification: the classical case of a coiled rope mistaken, in poor light or at a distance, for a snake.</p>
+
+    <h3>32.2 Prakriyā and Udāharaṇa</h3>
+    <p>This paper documents the analogy's own precise structure: the initial perception of the rope as a snake is documented as a genuine error, yet the true perception is documented as arising only through a series of increasingly clearer subsequent perceptions that progressively negate the initial error — a documented structure this paper reads as directly parallel to the elephant-tree analogy the wider tradition also records, and to Section 2.3's own account of each successive phoneme sharpening a listener's grasp of a word not yet complete.</p>
+
+    <h3>32.3 Phala</h3>
+    <p>This paper draws the consequence: this analogy supplies sphoṭa theory with a documented general account not only of how correct cognition is progressively achieved, but of how error itself is progressively corrected through the identical mechanism — a documented unification this paper reads as strengthening Section XXXIII's own case for pratibhā as a distinct, self-standing pramāṇa, capable of accounting for both correct cognition and its own self-correction without requiring a further, separate error-theory.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXXIII -->
+  <section id="sec-33">
+    <h2 class="blocktitle">Part II · Section XXXIII</h2>
+    <h2 class="roman">XXXIII.</h2>
+    <h2 class="section-name">Pratibhā in Poetics: Mammaṭa's Documented Extension</h2>
+
+    <h3>33.1 Lakṣaṇa</h3>
+    <p>This paper documents that pratibhā's own documented reach extends beyond ordinary sentence-comprehension into the specific domain of poetics, as recorded in Mammaṭācārya's Kāvyaprakāśa, an eleventh-century treatise on poetic theory.</p>
+
+    <h3>33.2 Prakriyā and Udāharaṇa</h3>
+    <p>This paper documents Mammaṭa's own explicit observation: mere knowledge of a poem's individual words, on this account, is documented as insufficient for genuinely understanding and enjoying a work's poetic import or essential quality (kāvya) — such appreciation is documented as requiring pratibhā specifically, which Mammaṭa is documented to characterise further as nava-navonveṣa-śālinī prajñā, an ever-inventive and resourceful intellect continually discovering what is new.</p>
+
+    <h3>33.3 Phala</h3>
+    <p>This paper draws the consequence Mammaṭa himself draws, sometimes documented under the closely related term vāsanā: only those readers or listeners genuinely endowed with pratibhā are held capable of truly enjoying a kāvya's own essence and beauty — a documented extension this paper reads as showing pratibhā's own explanatory reach extending well beyond the strictly grammatical domain this paper's earlier sections have primarily examined, into aesthetic theory directly, and anticipating this sequence's own later, more explicitly aesthetic treatment of rasa in Parts VIII–IX.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXXIV -->
+  <section id="sec-34">
+    <h2 class="blocktitle">Part II · Section XXXIV</h2>
+    <h2 class="roman">XXXIV.</h2>
+    <h2 class="section-name">Sphoṭavādins and Their Documented Opponents</h2>
+
+    <h3>34.1 Lakṣaṇa</h3>
+    <p>This paper documents, completing the introduction Part One's Section V began, the full historical roll of schools and individual philosophers the tradition itself records as having taken an explicit, documented position for or against sphoṭa-vāda.</p>
+
+    <h3>34.2 Prakriyā: The Documented Roster</h3>
+    <p>This paper documents the Sphoṭavādins — those who supported the doctrine — as including, most prominently, Yāska, Patañjali, Maṇḍana Miśra, Nāgeśabhaṭṭa, scholars of the Kashmir Śaiva school, certain Yoga commentators, and Bhartṛhari himself as the doctrine's own principal champion. This paper documents the anti-Sphoṭavādins, who are recorded to have not only outnumbered but also to have proven more broadly influential, as including Upavarṣa, scholars of the Sāṃkhya, Nyāya, and Vaiśeṣika schools, scholars of Śaiva Siddhānta, the Mīmāṃsakas Śabaraswāmin, Kumārila Bhaṭṭa, and Prabhākara, Śrī Rāmānuja, Śrī Madhva, Śrī Jīva Gosvāmī, Vācaspati Miśra, and, most consequentially, Śrī Śaṅkara himself.</p>
+
+    <table class="series-table">
+      <caption>The Documented Historical Roster</caption>
+      <thead><tr><th>Position</th><th>Documented Adherents</th></tr></thead>
+      <tbody>
+        <tr><td>Sphoṭavādins (for)</td><td>Yāska · Patañjali · Bhartṛhari · Maṇḍana Miśra · Nāgeśabhaṭṭa · Kashmir Śaiva scholars · certain Yoga commentators</td></tr>
+        <tr><td>Anti-Sphoṭavādins (against)</td><td>Upavarṣa · Sāṃkhya, Nyāya, Vaiśeṣika, Śaiva Siddhānta scholars · Śabaraswāmin · Kumārila Bhaṭṭa · Prabhākara · Rāmānuja · Madhva · Jīva Gosvāmī · Vācaspati Miśra · Śaṅkara</td></tr>
+      </tbody>
+    </table>
+
+    <h3>34.3 Phala: The Documented Two Platforms</h3>
+    <p>This paper draws the consequence the tradition itself records: the early Mīmāṃsā school, in strongly defending varṇa-vāda, argued that the individual word or letter (varṇa) is the prime substance of speech, while the Grammarian school, conversely, advocated sphoṭa-vāda to explain the documented mysterious manner in which sentence-meaning is conveyed, understanding sphoṭa as a documented process of cognition culminating in the intuitive perception (pratibhā) of the Absolute as Śabda-Brahman — with these two positions documented as becoming the major platforms for subsequent debate across the wider landscape of Indian philosophical and grammatical schools.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXXV -->
+  <section id="sec-35">
+    <h2 class="blocktitle">Part II · Section XXXV</h2>
+    <h2 class="roman">XXXV.</h2>
+    <h2 class="section-name">Śabaraswāmin's Documented Rejection</h2>
+
+    <h3>35.1 Lakṣaṇa</h3>
+    <p>This paper documents the earliest of the major recorded objections to sphoṭa-vāda examined in this paper's third block, attributed to Śabaraswāmin, the celebrated Mīmāṃsaka standardly dated to approximately the first century BCE.</p>
+
+    <h3>35.2 Prakriyā and Udāharaṇa</h3>
+    <p>This paper documents Śabara's own commentary on Mīmāṃsā-sūtra 1.1.5 as dismissing sphoṭa-vāda directly, on the documented ground that the doctrine is inconsistent with Mīmāṃsā's own foundational commitment to the reality of Vedic words: a word, on Śabara's account, is nothing more than a combination of phonemes (varṇa), with the syllables themselves documented as independent units that, while individually insufficient to convey meaning, do convey meaning once properly combined — a documented relationship Śabara names autpattikaḥ śabdasyārthena saṃbandhaḥ, the connection between word and meaning being itself inherent and not conventionally established.</p>
+
+    <h3>35.3 Phala</h3>
+    <p>This paper documents Śabara's own closing documented judgment: he saw no genuine need for positing sphoṭa as any further, additional entity, since nothing beyond phonemes and their combination is documented as required to explain meaning — a position this paper reads as directly opposed to Bhartṛhari's own dual-power account already established in Section VIII, and as the direct historical seed of the fuller varṇa-vāda this paper's Sections XXXVIII–XXXIX examine.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXXVI -->
+  <section id="sec-36">
+    <h2 class="blocktitle">Part II · Section XXXVI</h2>
+    <h2 class="roman">XXXVI.</h2>
+    <h2 class="section-name">Kumārila Bhaṭṭa's Economy Objection</h2>
+
+    <h3>36.1 Lakṣaṇa</h3>
+    <p>This paper documents a further, closely related objection from Kumārila Bhaṭṭa, a noted Mīmāṃsā scholar of the seventh to eighth century, following directly in Śabara's own documented line.</p>
+
+    <h3>36.2 Prakriyā and Udāharaṇa</h3>
+    <p>This paper documents Kumārila's own specific line of attack: he directed his objection at the very manner in which sphoṭa was supposed to reveal the meaning of word-sounds (śabda), arguing that a word — whether an individual word or a word functioning as part of a sentence — is nothing more than a collection of articulated sounds, and that it is with this collection of sounds alone that meaning is documented to be associated; the listener, on Kumārila's own account, simply grasps the sounds of the words together with their meaning, and there is documented, on this account, nothing further here requiring the unwarranted further assumption of a mystical sphoṭa-process.</p>
+
+    <h3>36.3 Phala</h3>
+    <p>This paper draws the consequence: Kumārila's own objection, this paper reads, is best classified as a parsimony or economy-based objection specifically — sphoṭa, on this reading, violates a general and independently reasonable preference for the more economical explanation, since phoneme-sequence together with ordinary memory already appears, to Kumārila, sufficient to explain unified sentence-comprehension without any further ontological posit.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXXVII -->
+  <section id="sec-37">
+    <h2 class="blocktitle">Part II · Section XXXVII</h2>
+    <h2 class="roman">XXXVII.</h2>
+    <h2 class="section-name">Maṇḍana Miśra's Documented Defense</h2>
+
+    <h3>37.1 Lakṣaṇa</h3>
+    <p>This paper documents Maṇḍana Miśra, a documented contemporary of Kumārila Bhaṭṭa, as having directly refuted his senior Mīmāṃsaka's own economy objection, characterising Kumārila's own position as, in Maṇḍana's own documented judgment, rather too readily dismissive of a genuine explanatory problem.</p>
+
+    <h3>37.2 Prakriyā and Udāharaṇa</h3>
+    <p>This paper documents Maṇḍana's own chosen mode of defense: a brilliant commentary, the Sphoṭa-siddhi, built directly upon Bhartṛhari's own Vākyapadīya, in which Maṇḍana is documented to have explicitly supported Bhartṛhari's own presumption that the whole is prior to its parts, and that the whole is, further, genuinely greater than the mere sum of those parts — this paper's own Sections XV–XVI have already documented Maṇḍana's own two central supporting analogies, the painting and the woven cloth, drawn directly from this same defense.</p>
+
+    <h3>37.3 Phala</h3>
+    <p>This paper draws the consequence Maṇḍana himself draws, closely paraphrasing his own documented conclusion: it is not the individual words but the complete thought of the sentence that ultimately matters for genuine linguistic understanding — a documented restatement this paper reads as Maṇḍana's own explicit acknowledgment that this specific insight belongs, in the first instance, to Bhartṛhari, whose argument Maṇḍana's own commentary sets out to elaborate and defend rather than to originate.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXXVIII -->
+  <section id="sec-38">
+    <h2 class="blocktitle">Part II · Section XXXVIII</h2>
+    <h2 class="roman">XXXVIII.</h2>
+    <h2 class="section-name">Śaṅkara, Upavarṣa, and the Documented Varṇa-Vāda</h2>
+
+    <h3>38.1 Lakṣaṇa</h3>
+    <p>This paper documents the single most historically consequential documented objection to sphoṭa-vāda, associated with Śrī Śaṅkara's own commentary on Brahma-sūtra 1.3.28, and traced by Śaṅkara himself to the earlier, documented authority of Upavarṣa, standardly dated to approximately 500 BCE.</p>
+
+    <h3>38.2 Prakriyā: Upavarṣa's Documented Position</h3>
+    <p>This paper documents Upavarṣa's own recorded remark, quoted by Śaṅkara with explicit approval: all this talk of unity of meaning and the like is documented as largely an illusion, since it is the words — their own articulated elements, the varṇas — alone that constitute the word's genuine unity. This paper documents Upavarṣa's own resulting theory, varṇa-vāda, according to which the smallest phonetic units capable of bearing meaning, the varṇas themselves, alone constitute the real, documented constituents of a word, with no further sphoṭa required.</p>
+
+    <h3>38.3 Udāharaṇa: Śaṅkara's Own Documented Adoption</h3>
+    <p>This paper documents Śaṅkara's own explicit citation of Upavarṣa's authority directly, remarking that the revered Upavarṣa himself says that words are none other than various letter-sounds (varṇa eva tu śabdā iti bhagavān upavarṣaḥ), and documenting further that Śaṅkara built his own subsequent argument against sphoṭa-vāda specifically upon what he called the tradition of the masters (ācārya-sampradāyokti-pūrvakaṃ siddhāntam āha varṇa iti) — a documented appeal to established interpretive lineage this paper reads as characteristic of Śaṅkara's own broader commentarial method.</p>
+
+    <h3>38.4 Phala: Inference as All-or-Nothing</h3>
+    <p>This paper documents Śaṅkara's own further, technically precise argument: on his account, only individual letters are genuinely perceived, and these are subsequently combined into the word-aggregate through a documented act of the mind's own inference rather than through direct perception; because this psychological process is, on Śaṅkara's account, one of inference rather than perception, no genuine degrees of cognition are documented as possible along the way — inference, for Śaṅkara, is documented as an all-or-nothing process, such that any error must be completely and at once replaced by an entirely new inferential construction, or by a documented super-conscious intuition of Brahman itself, rather than gradually refined through the accumulating, graduated process this paper's Sections III and XXXI have documented for sphoṭa-vāda.</p>
+
+    <h3>38.5 A Documented Wider Following</h3>
+    <p>This paper documents that Śaṅkara's own position did not stand alone: Vācaspati Miśra, who himself wrote a documented commentary on Śaṅkara's own Vedānta-sūtra-bhāṣya, likewise rejected sphoṭa theory, developing in its place his own further, distinct theory examined next in this paper's Section XXXIX.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XXXIX -->
+  <section id="sec-39">
+    <h2 class="blocktitle">Part II · Section XXXIX</h2>
+    <h2 class="roman">XXXIX.</h2>
+    <h2 class="section-name">Vācaspati Miśra's Abhihitānvaya-Vāda</h2>
+
+    <h3>39.1 Lakṣaṇa</h3>
+    <p>Abhihitānvaya-vāda names Vācaspati Miśra's own documented alternative account of sentence-meaning, developed specifically in place of the sphoṭa-vāda he rejected alongside Śaṅkara.</p>
+
+    <h3>39.2 Prakriyā and Udāharaṇa</h3>
+    <p>This paper documents Vācaspati's own specific proposal: a sentence's overall meaning, on this account, is reached by inferring toward it, through a documented separate act of lakṣaṇā (implication), from the individual meanings of the sentence's own constituent words, already independently expressed (abhihita) by those words in isolation — a documented two-stage process this paper reads as standing in direct structural opposition to Bhartṛhari's own single-stage, directly perceived pratibhā (Section XXIX).</p>
+
+    <h3>39.3 Phala</h3>
+    <p>This paper draws the consequence: because Vācaspati's own account requires individual word-meanings to be already independently established before the further inferential step to sentence-meaning can occur, his position is documented as directly incompatible with this paper's own Section XIX claim, following Bhartṛhari, that individual words possess no independent meaning of their own outside the sentence — a documented point of genuine and irreducible disagreement this paper registers here without attempting to resolve it, consistent with this series' recurring evenhandedness practice.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XL -->
+  <section id="sec-40">
+    <h2 class="blocktitle">Part II · Section XL</h2>
+    <h2 class="roman">XL.</h2>
+    <h2 class="section-name">Modern Recognition: Bimal K. Matilal's Documented Assessment</h2>
+
+    <h3>40.1 Lakṣaṇa</h3>
+    <p>This paper documents, closing this paper's own historical survey, a modern scholarly assessment of sphoṭa theory's own lasting significance, drawn from the noted modern scholar Bimal K. Matilal.</p>
+
+    <h3>40.2 Prakriyā and Udāharaṇa</h3>
+    <p>This paper documents Matilal's own recorded observation: even in recent times, sphoṭa doctrine is documented to be widely recognised among modern linguists as among the most complete documented investigations into the profundities of language, and is documented to have made a considerable, lasting contribution to the philosophy of language, the psychology of speech, and, in particular, to semiotics specifically.</p>
+
+    <h3>40.3 Phala</h3>
+    <p>This paper draws the consequence this modern assessment supports: sphoṭa-vāda, though it lost its own documented historical debate with varṇa-vāda within classical Indian philosophy in terms of the number and institutional influence of its opponents (Section 34.3), is documented, on independent modern scholarly assessment, to have nonetheless produced a technically sophisticated and enduringly significant theory of linguistic meaning — a documented outcome this paper reads as itself vindicating this series' own recurring methodological choice (Part One, Section 27.2) to treat Bhartṛhari's position as this sequence's own primary organising voice, despite its documented minority status within the wider classical landscape.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- SECTION XLI -->
+  <section id="sec-41">
+    <h2 class="blocktitle">Part II · Section XLI</h2>
+    <h2 class="roman">XLI.</h2>
+    <h2 class="section-name">Closing Synthesis of the Third Block</h2>
+
+    <h3>41.1 Consolidating Sections XXIX–XL</h3>
+    <p>This third block has documented pratibhā's own full technical apparatus — its basic definition and instantaneous character (Section XXIX), its six documented sources (Section XXX), and its concrete illustration through the kamalam example (Section XXXI) and the rope-and-snake analogy (Section XXXII), together with its documented extension into poetics (Section XXXIII) — before completing the historical roll of Sphoṭavādins and their opponents (Section XXXIV) through the specific documented objections of Śabara (Section XXXV), Kumārila (Section XXXVI), Maṇḍana's defense (Section XXXVII), Śaṅkara and Upavarṣa's varṇa-vāda (Section XXXVIII), Vācaspati's abhihitānvaya-vāda (Section XXXIX), and Matilal's modern assessment (Section XL).</p>
+
+    <table class="series-table appendix-table">
+      <caption>This Paper's Three Blocks, Complete</caption>
+      <thead><tr><th>Block</th><th>Sections</th><th>Primary Method</th></tr></thead>
+      <tbody>
+        <tr><td>First block</td><td>I–XIV</td><td>Compositional machinery: varṇa to pada to vākya; the dhvani/sphoṭa distinction</td></tr>
+        <tr><td>Second block</td><td>XV–XXVIII</td><td>Illustrative analogies; formal priority of sentence-meaning; later classification and etymology</td></tr>
+        <tr><td>Third block</td><td>XXIX–XLI</td><td>Pratibhā's full apparatus; the documented historical debate, pro and contra</td></tr>
+      </tbody>
+    </table>
+
+    <h3>41.2 What Remains in This Paper</h3>
+    <p>This paper's remaining apparatus — the six-panel deep-dive widget, methodological appendix, expanded footnotes, bibliography, and glossary — follows below, closing with this paper's own recap and handoff to Part Three.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- TAB WIDGET -->
+  <div id="tabwidget-anchor" class="tabwidget">
+    <div class="tabwidget-head">
+      <div class="eyebrow">Interactive · Six Panels</div>
+      <h3>Sphoṭa Completed — Deep-Dive Tabs</h3>
+      <p>Each panel supplies material at a level of depth beyond this paper's forty-one core sections. Panels are independently navigable and do not require sequential reading.</p>
+    </div>
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="cmShowTab(0)">I · Eightfold Sphoṭa Compared</button>
+      <button class="tab-btn" onclick="cmShowTab(1)">II · Pratibhā and Pramāṇa</button>
+      <button class="tab-btn" onclick="cmShowTab(2)">III · The Debate, Staged</button>
+      <button class="tab-btn" onclick="cmShowTab(3)">IV · Two Analogies, One Strategy</button>
+      <button class="tab-btn" onclick="cmShowTab(4)">V · Preview of Parts III–XII</button>
+      <button class="tab-btn" onclick="cmShowTab(5)">VI · Interactive Glossary</button>
+    </div>
+
+    <div class="tab-panel active" id="tab-0">
+      <h4>Nāgeśabhaṭṭa's Eight Varieties, Set Side by Side</h4>
+      <p>Section XXIII documented Nāgeśabhaṭṭa's eightfold classification in outline. This panel sets each variety directly against the specific documented cognitive question it was developed to answer, making explicit why the tradition itself judged seven of the eight to be pedagogically useful rather than ontologically final.</p>
+      <table class="series-table">
+        <thead><tr><th>Variety</th><th>Documented Question It Answers</th><th>Final Status</th></tr></thead>
+        <tbody>
+          <tr><td>Varṇa-sphoṭa</td><td>What is grasped when a single phoneme is heard?</td><td>Pedagogical only</td></tr>
+          <tr><td>Pada-sphoṭa</td><td>What is grasped when a single word is heard?</td><td>Pedagogical only</td></tr>
+          <tr><td>Vākya-sphoṭa</td><td>What is grasped when a single sentence is heard?</td><td>Pedagogical only, at the instance level</td></tr>
+          <tr><td>Varṇa/Pada/Vākya-jāti-sphoṭa</td><td>What is common across every correct utterance of a phoneme, word, or sentence?</td><td>Pedagogical only</td></tr>
+          <tr><td>Akhaṇḍa-pada-sphoṭa</td><td>What makes a word, considered as fully undivided, genuinely one?</td><td>Approaches but does not reach the doctrine's essential core</td></tr>
+          <tr><td>Akhaṇḍa-vākya-sphoṭa</td><td>What makes the sentence, considered as fully undivided, genuinely one?</td><td>Documented as sphoṭa theory's own essential core</td></tr>
+        </tbody>
+      </table>
+      <p>This paper's own synthetic observation is that the eightfold scheme's real documented function is diagnostic rather than additive: it does not multiply sphoṭa's own basic kinds so much as it names, precisely, the specific angle from which a beginning student's own analytical confusion needs to be corrected at each stage of study, on the way toward akhaṇḍa-vākya-sphoṭa alone.</p>
+    </div>
+
+    <div class="tab-panel" id="tab-1">
+      <h4>Pratibhā Against the Standard Pramāṇas</h4>
+      <p>Section 12.4 flagged pratibhā's own documented classification as a form of direct perception (pratyakṣa) rather than inference (anumāna). This panel sets that classification against the standard Nyāya list of pramāṇas (means of valid knowledge) to make the documented dispute's own technical stakes explicit.</p>
+      <table class="series-table">
+        <thead><tr><th>Pramāṇa</th><th>Standard Nyāya Documented Scope</th><th>Bhartṛhari's Documented Placement of Pratibhā</th></tr></thead>
+        <tbody>
+          <tr><td>Pratyakṣa (perception)</td><td>Direct sensory contact with an object</td><td>Closest analogue, but pratibhā's object (sentence-meaning) is not a standard sensory object</td></tr>
+          <tr><td>Anumāna (inference)</td><td>Knowledge derived through an established evidence-conclusion relation (vyāpti)</td><td>Explicitly rejected — Bhartṛhari's school denies sentence-meaning is inferred stepwise from word-meanings</td></tr>
+          <tr><td>Upamāna (comparison)</td><td>Knowledge derived through analogy to a known referent</td><td>Not applicable to pratibhā's documented function</td></tr>
+          <tr><td>Śabda (verbal testimony)</td><td>Knowledge derived from a reliable speaker's statement</td><td>Presupposes rather than explains sphoṭa's own cognition</td></tr>
+          <tr><td>Pratibhā (proposed distinct pramāṇa)</td><td>Not part of the standard Nyāya list</td><td>Bhartṛhari's own school's documented proposal — a distinct, sui generis pramāṇa for grasping sentence-meaning directly and instantaneously</td></tr>
+        </tbody>
+      </table>
+      <p>This panel documents that later Nyāya commentators found this proposed fifth pramāṇa unsatisfying precisely because it appeared, on Nyāya's own methodological taste, to multiply explanatory categories beyond what the existing four were independently judged to require — the same parsimony-based objection this paper's Section XXXVI has already documented Kumārila raising against sphoṭa more generally.</p>
+    </div>
+
+    <div class="tab-panel" id="tab-2">
+      <h4>The Documented Debate, Staged Chronologically</h4>
+      <p>Section XXXIV supplied the debate's full roster. This panel restages the same material as a documented chronological sequence, making the dispute's own centuries-long development visible as a sequence of moves and countermoves rather than as a single static disagreement.</p>
+      <table class="series-table">
+        <thead><tr><th>Approximate Period</th><th>Documented Figure</th><th>Documented Move</th></tr></thead>
+        <tbody>
+          <tr><td>c. 500 BCE</td><td>Upavarṣa</td><td>States varṇa-vāda; rejects unity-of-meaning claims as illusory</td></tr>
+          <tr><td>c. 1st c. BCE</td><td>Śabaraswāmin</td><td>Dismisses sphoṭa on Mīmāṃsā textual-authority grounds</td></tr>
+          <tr><td>c. 5th c. CE</td><td>Bhartṛhari</td><td>Systematises sphoṭa-vāda; establishes vākya-sphoṭa's priority</td></tr>
+          <tr><td>c. 7th–8th c. CE</td><td>Kumārila Bhaṭṭa</td><td>Presses the economy/parsimony objection</td></tr>
+          <tr><td>c. 7th–8th c. CE</td><td>Maṇḍana Miśra</td><td>Defends Bhartṛhari directly against Kumārila in the Sphoṭa-siddhi</td></tr>
+          <tr><td>c. 8th c. CE</td><td>Śrī Śaṅkara</td><td>Adopts Upavarṣa's varṇa-vāda; argues inference is all-or-nothing</td></tr>
+          <tr><td>c. 9th–10th c. CE</td><td>Vācaspati Miśra</td><td>Develops abhihitānvaya-vāda as a further alternative to sphoṭa</td></tr>
+          <tr><td>Later grammarians</td><td>Nāgeśabhaṭṭa</td><td>Develops the eightfold classification, refining rather than abandoning sphoṭa</td></tr>
+          <tr><td>20th century</td><td>Bimal K. Matilal</td><td>Documents sphoṭa's lasting significance for modern linguistics and semiotics</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tab-panel" id="tab-3">
+      <h4>The Painter's Canvas and Maṇḍana's Cloth, Read Together</h4>
+      <p>Sections XV and XVI documented these two analogies separately. This panel reads them as a single, coordinated argumentative strategy, since both address the identical documented objection from two independent directions.</p>
+      <table class="series-table">
+        <thead><tr><th>Feature</th><th>Painter's Canvas (Section XV)</th><th>Maṇḍana's Cloth (Section XVI)</th></tr></thead>
+        <tbody>
+          <tr><td>Documented source</td><td>Bhartṛhari, Vākyapadīya</td><td>Maṇḍana Miśra, Sphoṭa-siddhi</td></tr>
+          <tr><td>What is unified</td><td>The artist's own three-stage process of conception and execution</td><td>The viewer's own act of perceiving a finished whole</td></tr>
+          <tr><td>Documented direction of argument</td><td>From whole conception down to sequential physical execution</td><td>From sequential material constituents up to perceived whole</td></tr>
+          <tr><td>Linguistic parallel</td><td>Paśyantī → madhyamā → vaikharī (speaker's own process)</td><td>Vaikharī → pratibhā (listener's own reception)</td></tr>
+        </tbody>
+      </table>
+      <p>This paper's own synthetic observation is that the two analogies are documented as jointly covering both directions of the communicative act this paper's Section V has already examined: the painter's canvas illustrates the speaker's own descent from unified conception to sequential utterance, while Maṇḍana's cloth illustrates the listener's own ascent from sequential reception back to unified grasp — together supplying a complete, two-directional account of the single communicative event sphoṭa theory as a whole seeks to explain.</p>
+    </div>
+
+    <div class="tab-panel" id="tab-4">
+      <h4>Preview: Where Parts Three Through Twelve Pick Up This Paper's Threads</h4>
+      <p><strong>Part III — Mātṛkā: The Phoneme as Power.</strong> Takes up varṇa-sphoṭa specifically (Section II) and its own documented jāti/vyakti structure (Section 27.2), documenting how each individual phoneme, already established here as a necessary but insufficient linguistic unit, becomes in tantric ritual vocabulary a specific, named power (mātṛkā) in its own right.</p>
+      <p><strong>Part IV — Mātṛkā-Nyāsa.</strong> Takes up the fire and water-reflection analogies (Sections VIII–IX) as a documented technical bridge toward the specific ritual technique of installing phonemic power into the practitioner's own body.</p>
+      <p><strong>Parts V–VI — Prāṇa, Citta, Kuṇḍalinī.</strong> Take up pratibhā's own documented sixfold sources (Section XXX), particularly yoga (yogā) among them, documenting the specific disciplined technique by which pratibhā's own instinctive capacity can be deliberately cultivated rather than left to arise only from inborn nature.</p>
+      <p><strong>Part VII — Vaikharī Becomes Gesture.</strong> Takes up the painter's three-stage analogy (Section XV) directly, extending its own third stage — sequential physical execution — from painting specifically to codified bodily gesture.</p>
+      <p><strong>Parts VIII–IX — Rasa and Abhinaya.</strong> Take up pratibhā's own documented extension into poetics (Section XXXIII) directly, developing Mammaṭa's own kāvya-appreciation model into the Nāṭyaśāstra's fuller aesthetic theory of rasa.</p>
+      <p><strong>Parts X–XI — The 108 Karaṇas.</strong> Take up akhaṇḍa-vākya-sphoṭa's own documented undivided-whole structure (Section XXIV) as the conceptual model for how a single named karaṇa, itself composed of distinguishable limb-movements, is nonetheless grasped and performed as one undivided unit.</p>
+      <p><strong>Part XII — Closing Synthesis.</strong> Returns to this paper's own closing claim (Section 41.1) that sphoṭa theory's grammatical machinery, not merely its metaphysical assertion, is the specific documented mechanism this entire sequence's later technical disciplines each further elaborate.</p>
+    </div>
+
+    <div class="tab-panel" id="tab-5">
+      <h4>Interactive Glossary</h4>
+      <div class="glossary-term"><span class="term">वर्णस्फोटः</span><span class="roman">varṇa-sphoṭa</span><span class="def">The documented, provisional unitary status of the individual phoneme (Section II).</span></div>
+      <div class="glossary-term"><span class="term">पदस्फोटः</span><span class="roman">pada-sphoṭa</span><span class="def">The documented, provisional unitary status of the individual word (Section IV).</span></div>
+      <div class="glossary-term"><span class="term">वाक्यस्फोटः</span><span class="roman">vākya-sphoṭa</span><span class="def">The sentence's own genuinely primary unitary meaning-bearing entity (Section VI).</span></div>
+      <div class="glossary-term"><span class="term">अखण्डवाक्यस्फोटः</span><span class="roman">akhaṇḍa-vākya-sphoṭa</span><span class="def">The sentence as undivided unit; documented as sphoṭa theory's own essential core (Section XXIV).</span></div>
+      <div class="glossary-term"><span class="term">अपोद्धारः</span><span class="roman">apoddhāra</span><span class="def">The artificial, pedagogically useful extraction of parts from an integral linguistic unit (Section XX).</span></div>
+      <div class="glossary-term"><span class="term">प्रतिभा</span><span class="roman">pratibhā</span><span class="def">The instantaneous, non-inferential flash of insight through which sentence-meaning is grasped (Section XXIX).</span></div>
+      <div class="glossary-term"><span class="term">वृत्तिः</span><span class="roman">vṛtti</span><span class="def">Variation in the mode or speed of utterance, documented as never altering sphoṭa itself (Section XIII).</span></div>
+      <div class="glossary-term"><span class="term">वर्णवादः</span><span class="roman">varṇa-vāda</span><span class="def">Upavarṣa's and Śaṅkara's documented rival theory: phonemes alone, not sphoṭa, bear meaning (Section XXXVIII).</span></div>
+      <div class="glossary-term"><span class="term">अभिहितान्वयवादः</span><span class="roman">abhihitānvaya-vāda</span><span class="def">Vācaspati Miśra's documented theory: sentence-meaning is inferred from already-expressed word-meanings (Section XXXIX).</span></div>
+      <div class="glossary-term"><span class="term">औत्पत्तिकः शब्दार्थसम्बन्धः</span><span class="roman">autpattikaḥ śabdārtha-sambandhaḥ</span><span class="def">Śabara's documented formula: the connection between word and meaning is inherent, not conventional (Section XXXV).</span></div>
+    </div>
+  </div>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- APPENDIX -->
+  <section id="sec-appendix">
+    <h2 class="section-name">Methodological Appendix: Evidentiary Categories Applied in This Paper</h2>
+    <p>Following the evidentiary practice this series applies throughout, this appendix distinguishes the categories this paper's forty-one sections have tried consistently to keep separate. First, directly documented textual claim — Bhartṛhari's own kārikās on the two aspects of upādāna-śabda (Section VII), the fire and water-reflection analogies (Sections VIII–IX), the apoddhāra passages (Sections XX–XXII), and the pratibhā kārikās (Sections XXIX–XXX) all fall in this category, drawn from the Vākyapadīya in standard critical editions. Second, this paper's own structural-synthetic proposal — most prominently the claim that the painter's canvas and Maṇḍana's cloth together supply a single two-directional argumentative strategy (Tab Panel IV), and the reading of Nāgeśabhaṭṭa's eightfold classification as diagnostic rather than additive (Tab Panel I), offered as this paper's own organising interpretation rather than as a claim any single primary source states in precisely these terms. Third, explicitly bracketed comparative material, carried over from Part One's own practice and applied here specifically to the Kashmir Śaiva ābhāsa doctrine noted in Section 9.3, offered for structural and documentary value without claiming historical connection or doctrinal equivalence.</p>
+
+    <table class="series-table appendix-table">
+      <thead><tr><th>Category</th><th>Example</th><th>Section(s)</th></tr></thead>
+      <tbody>
+        <tr><td>Directly documented textual claim</td><td>VP. 1.1, 1.44–1.51, 1.59, 1.74, 2.31, 2.57, 2.115, 2.143, 2.152, 2.325</td><td>III, IV, VI–XIII, XVIII, XXI–XXII, XXIX–XXX</td></tr>
+        <tr><td>Structural-synthetic proposal</td><td>Painter/cloth as coordinated strategy; eightfold sphoṭa as diagnostic</td><td>Tab I, Tab IV</td></tr>
+        <tr><td>Bracketed comparison</td><td>Kashmir Śaiva ābhāsa doctrine</td><td>9.3</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- FOOTNOTES -->
+  <section id="footnotes">
+    <h2 class="section-name">Footnotes</h2>
+    <ol>
+      <li><em>1</em> On the completion of sphoṭa theory generally: Bhartṛhari, <em>Vākyapadīya</em>, Book I, standard critical edition with the Vṛtti; K. A. Subramania Iyer, <em>Bhartṛhari: A Study of the Vākyapadīya in the Light of the Ancient Commentaries</em> (Poona: Deccan College, 1969).</li>
+      <li><em>2</em> On varṇa-sphoṭa and pada-sphoṭa specifically: K. Kunjunni Raja, <em>Indian Theories of Meaning</em> (Madras: Adyar Library and Research Centre, 1963).</li>
+      <li><em>3</em> On the two aspects of upādāna-śabda: Vākyapadīya 1.44–1.46, standard critical editions.</li>
+      <li><em>4</em> On the fire-in-kindling-wood analogy: Vākyapadīya 1.47–1.48, standard critical editions.</li>
+      <li><em>5</em> On the water-reflection analogy: Vākyapadīya 1.49–1.51, standard critical editions.</li>
+      <li><em>6</em> On Pāṇini's own antecedent rule: Pāṇini, <em>Aṣṭādhyāyī</em> 1.1.68, standard critical editions; George Cardona, <em>Pāṇini: His Work and Its Traditions</em> (Delhi: Motilal Banarsidass, 1988).</li>
+      <li><em>7</em> On the provisional status of the dhvani/sphoṭa distinction: Vākyapadīya 1.59, standard critical editions.</li>
+      <li><em>8</em> On the painter's three-stage analogy: as surveyed in Iyer, op. cit.</li>
+      <li><em>9</em> On Maṇḍana Miśra's cloth analogy: Maṇḍanamiśra, <em>Sphoṭasiddhi</em>, standard critical editions.</li>
+      <li><em>10</em> On apoddhāra and the priority of sentence-meaning: Vākyapadīya, Book II, standard critical editions with Puṇyarāja's and Helārāja's commentaries.</li>
+      <li><em>11</em> On abheda-pūrvakā bhedāḥ: Vākyapadīya 2.57, standard critical editions.</li>
+      <li><em>12</em> On vākyārtha-nibandhanam: Vākyapadīya 2.115 and 2.325, standard critical editions.</li>
+      <li><em>13</em> On Nāgeśabhaṭṭa's eightfold classification: Nāgeśabhaṭṭa, <em>Parama-laghu-mañjūṣā</em>, standard critical editions.</li>
+      <li><em>14</em> On the etymology of sphoṭa: Nāgeśabhaṭṭa, <em>Sphoṭavāda</em>; Mādhava, <em>Sarva-darśana-saṃgraha</em>, standard critical editions.</li>
+      <li><em>15</em> On the "blossoming" rendering of sphoṭa: Harsha V. Dehejia, as cited in the attached source material.</li>
+      <li><em>16</em> On sphoṭa's two planes, metaphysical and empirical: as surveyed generally in Iyer, op. cit., and in this series' own Part One, Sections II–III and XI.</li>
+      <li><em>17</em> On bāhya and ābhyantara sphoṭa, and Patañjali's own prior position: as surveyed in Kunjunni Raja, op. cit.</li>
+      <li><em>18</em> On pratibhā generally: Vākyapadīya, Book II, Kārikās 143–152, standard critical editions.</li>
+      <li><em>19</em> On the six documented sources of pratibhā: Vākyapadīya 2.152, standard critical editions.</li>
+      <li><em>20</em> On the kamalam illustration: Śeṣa Kṛṣṇa, <em>Sphoṭatattvanirūpaṇa</em>, standard critical editions.</li>
+      <li><em>21</em> On the rope-and-snake analogy and the elephant-tree analogy: as surveyed generally in Kunjunni Raja, op. cit.</li>
+      <li><em>22</em> On pratibhā in poetics: Mammaṭācārya, <em>Kāvyaprakāśa</em>, standard critical editions.</li>
+      <li><em>23</em> On the documented historical roster of Sphoṭavādins and their opponents: as surveyed in Kunjunni Raja, op. cit., and in the attached source material.</li>
+      <li><em>24</em> On Śabaraswāmin's rejection: Śabaraswāmin, commentary on <em>Mīmāṃsā-sūtra</em> 1.1.5, standard critical editions.</li>
+      <li><em>25</em> On Kumārila Bhaṭṭa's economy objection: Kumārila Bhaṭṭa, <em>Ślokavārttika</em>, standard critical editions.</li>
+      <li><em>26</em> On Maṇḍana Miśra's defense: Maṇḍanamiśra, <em>Sphoṭasiddhi</em>, standard critical editions.</li>
+      <li><em>27</em> On Śaṅkara's adoption of Upavarṣa's varṇa-vāda: Śaṅkara, commentary on <em>Brahma-sūtra</em> 1.3.28 (Śārīraka-mīmāṃsā-bhāṣya), standard critical editions.</li>
+      <li><em>28</em> On Vācaspati Miśra's abhihitānvaya-vāda: as surveyed generally in Kunjunni Raja, op. cit.</li>
+      <li><em>29</em> On Bimal K. Matilal's modern assessment: Bimal Krishna Matilal, as cited in the attached source material; see also Matilal, <em>The Word and the World: India's Contribution to the Study of Language</em> (Delhi: Oxford University Press, 1990).</li>
+      <li><em>30</em> On this paper's own relationship to Part One: Cultural Musings, Series A Extended, Part One, Sections IV–V and 14.2.</li>
+    </ol>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- BIBLIOGRAPHY -->
+  <section id="bibliography">
+    <h2 class="section-name">Bibliography</h2>
+    <h3>Primary Sources</h3>
+    <p>Bhartṛhari. <em>Vākyapadīya.</em> Books I–II. With the Vṛtti. Standard critical editions.<br>
+    Maṇḍanamiśra. <em>Sphoṭasiddhi.</em> Standard critical editions.<br>
+    Kumārila Bhaṭṭa. <em>Ślokavārttika.</em> Standard critical editions.<br>
+    Śabaraswāmin. Commentary on the <em>Mīmāṃsā-sūtra.</em> Standard critical editions.<br>
+    Śaṅkara. <em>Brahma-sūtra-bhāṣya</em> (Śārīraka-mīmāṃsā-bhāṣya). Standard critical editions.<br>
+    Nāgeśabhaṭṭa. <em>Sphoṭavāda</em> and <em>Parama-laghu-mañjūṣā.</em> Standard critical editions.<br>
+    Mādhava. <em>Sarva-darśana-saṃgraha.</em> Standard critical editions.<br>
+    Śeṣa Kṛṣṇa. <em>Sphoṭatattvanirūpaṇa.</em> Standard critical editions.<br>
+    Mammaṭācārya. <em>Kāvyaprakāśa.</em> Standard critical editions.<br>
+    Pāṇini. <em>Aṣṭādhyāyī.</em> Standard critical editions.</p>
+
+    <h3>Secondary Sources</h3>
+    <p>Iyer, K. A. Subramania. <em>Bhartṛhari: A Study of the Vākyapadīya in the Light of the Ancient Commentaries.</em> Poona: Deccan College Postgraduate and Research Institute, 1969.<br>
+    Iyer, K. A. Subramania, trans. <em>Bhartṛhari's Vākyapadīya, Kāṇḍa I.</em> Poona: Deccan College, 1965.<br>
+    Kunjunni Raja, K. <em>Indian Theories of Meaning.</em> Madras: Adyar Library and Research Centre, 1963.<br>
+    Matilal, Bimal Krishna. <em>The Word and the World: India's Contribution to the Study of Language.</em> Delhi: Oxford University Press, 1990.<br>
+    Cardona, George. <em>Pāṇini: His Work and Its Traditions.</em> Delhi: Motilal Banarsidass, 1988.<br>
+    Padoux, André. <em>Vāc: The Concept of the Word in Selected Hindu Tantras.</em> Trans. Jacques Gontier. Albany: State University of New York Press, 1990.</p>
+
+    <h3>Predecessor Material</h3>
+    <p>Cultural Musings. <em>Series A Extended, Part One — Śabdabrahman: Vāk as the Ground of Being.</em> As cited throughout this paper, particularly Sections II–V, VI–X, and XXVII.<br>
+    Cultural Musings. <em>Series A, Parts One through Six</em> (original sequence), as cited in Part One's own Series Context section.</p>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- GLOSSARY -->
+  <section id="glossary">
+    <h2 class="section-name">Glossary</h2>
+    <div class="glossary-term"><span class="term">स्फोटः</span><span class="roman">sphoṭa</span><span class="def">The unitary, partless meaning-bearing entity manifested through, but ontologically distinct from, uttered sound (Section II onward).</span></div>
+    <div class="glossary-term"><span class="term">वर्णः</span><span class="roman">varṇa</span><span class="def">Phoneme; the individual audible sound-unit (Section II).</span></div>
+    <div class="glossary-term"><span class="term">पदम्</span><span class="roman">pada</span><span class="def">Word; the intermediate unit composed of phonemes and composing, in turn, the sentence (Section IV).</span></div>
+    <div class="glossary-term"><span class="term">वाक्यम्</span><span class="roman">vākya</span><span class="def">Sentence; the primary and, in Bhartṛhari's own account, only ultimately real linguistic unit (Section VI).</span></div>
+    <div class="glossary-term"><span class="term">ध्वनिः</span><span class="roman">dhvani</span><span class="def">The physically produced, transient sound-token that manifests sphoṭa (Section VII).</span></div>
+    <div class="glossary-term"><span class="term">प्रतिभा</span><span class="roman">pratibhā</span><span class="def">Instantaneous, non-inferential insight through which sentence-meaning is grasped (Section XXIX).</span></div>
+    <div class="glossary-term"><span class="term">वृत्तिः</span><span class="roman">vṛtti</span><span class="def">Variation in the speed or mode of a word's utterance, without variation in its sphoṭa (Section XIII).</span></div>
+    <div class="glossary-term"><span class="term">अपोद्धारः</span><span class="roman">apoddhāra</span><span class="def">The artificial, analytically useful extraction of parts from an integral linguistic whole (Section XX).</span></div>
+    <div class="glossary-term"><span class="term">अभेदपूर्वका भेदाः</span><span class="roman">abheda-pūrvakā bhedāḥ</span><span class="def">"Differences presuppose a prior unity" — Bhartṛhari's general metaphysical principle (Section XXI).</span></div>
+    <div class="glossary-term"><span class="term">जातिः / व्यक्तिः</span><span class="roman">jāti / vyakti</span><span class="def">Universal and particular instance, respectively; the axis along which Nāgeśabhaṭṭa's eightfold sphoṭa is organised (Section XXIII, XXVII).</span></div>
+    <div class="glossary-term"><span class="term">अखण्डवाक्यस्फोटः</span><span class="roman">akhaṇḍa-vākya-sphoṭa</span><span class="def">The sentence as undivided unit; sphoṭa theory's own documented essential core (Section XXIV).</span></div>
+    <div class="glossary-term"><span class="term">वर्णवादः</span><span class="roman">varṇa-vāda</span><span class="def">Upavarṣa's and Śaṅkara's rival theory that phonemes alone, not sphoṭa, bear meaning (Section XXXVIII).</span></div>
+    <div class="glossary-term"><span class="term">अभिहितान्वयवादः</span><span class="roman">abhihitānvaya-vāda</span><span class="def">Vācaspati Miśra's theory that sentence-meaning is inferred from already-expressed word-meanings (Section XXXIX).</span></div>
+  </section>
+
+  <div class="divider">❖ ❖ ❖</div>
+
+  <!-- RECAP -->
+  <section id="sec-recap">
+    <h2 class="section-name">Recap, Closing Synthesis, and Handoff to Part Three</h2>
+    <div class="recap-box">
+      <p>Forty-one sections, together with a six-panel interactive deep-dive widget, have completed the grammatical machinery Part One's own Section IV only introduced: the full documented process by which varṇa-sphoṭa's accumulating phonemic impressions compose into pada-sphoṭa, and pada-sphoṭa's own word-level cognitions compose, in turn, into vākya-sphoṭa, the sentence's own genuinely primary and ultimately real linguistic unit. This paper has documented Bhartṛhari's own two central analogies — fire latent in kindling wood, and a reflection disturbed by moving water — for the relationship between sphoṭa and the sequential sound that manifests it; the painter's canvas and Maṇḍana Miśra's cloth for the relationship between a communicated whole and its own sequential material constituents; pratibhā's own full documented apparatus, from its basic definition through its six sources to its concrete illustrations in the kamalam example and the rope-and-snake analogy; and, finally, the complete historical roll of the Sphoṭavādins and their opponents, from Upavarṣa and Śabara through Kumārila, Maṇḍana, Śaṅkara, and Vācaspati Miśra, to Nāgeśabhaṭṭa's own later refinement and Bimal K. Matilal's modern assessment.</p>
+      <blockquote>Part One asked what Vāk already is, before it becomes anything. This paper has asked, in the most technical documented detail this sequence permits, exactly how that undifferentiated ground is held to become, without ceasing to be one, the differentiated phonemes, words, and sentences through which ordinary speech actually proceeds — grammatical machinery this sequence's remaining ten parts will now take up directly, first as ritual power, and only very much later as codified movement. — Series A Extended · Editorial Framework</blockquote>
+    </div>
+    <p>Part Three inherits from this paper varṇa-sphoṭa's own documented jāti/vyakti structure (Sections II, XXVII) and turns to mātṛkā-śāstra's own ritual-phonemic elaboration of exactly that structure, documenting how each individual Sanskrit phoneme becomes, in tantric technical vocabulary, a specific named power that can be systematically invoked, worshipped, and, in Part Four, installed into the practitioner's own body.</p>
+
+    <div class="nav-arrows">
+      <span><a href="https://shastrasextvak.culturalmusings.com/">◀ Part I · Śabdabrahman</a></span>
+      <span><a href="#">Part III · Mātṛkā ▶</a></span>
+    </div>
+  </section>
+
+</main>
+
+<footer class="paper-footer">
+  <div class="om">ॐ तत् सत्</div>
+  <span class="translit-om">om tat sat — That is Truth</span>
+  <div><strong>Series A · Extended Sequence · Part Two</strong> · Sphoṭa Completed: From Varṇa to Vākya</div>
+  <div>Cultural Musings · Vedic &amp; Śāstric Research Platform</div>
+  <div>Predecessor: Series A Extended · Part One — Śabdabrahman: Vāk as the Ground of Being</div>
+  <div>Successor: Series A Extended · Part Three · Mātṛkā: The Phoneme as Power</div>
+</footer>
+
+<script>
+  function cmShowTab(idx){
+    var panels = document.querySelectorAll('.tab-panel');
+    var btns = document.querySelectorAll('.tab-btn');
+    for (var i=0;i<panels.length;i++){
+      panels[i].classList.remove('active');
+      btns[i].classList.remove('active');
+    }
+    panels[idx].classList.add('active');
+    btns[idx].classList.add('active');
+  }
+</script>
+
+</body>
+</html>
